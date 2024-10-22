@@ -152,6 +152,44 @@ namespace DOAN_DAL
             }
         }
 
+        public List<int> GetListMaKH_From_KHACHHANG()
+        {
+            List<int> list = new List<int>();
+            using (SqlConnection conn = new SqlConnection(connectionString))
+            {
+                string query = "SELECT MAKH AS MAKH FROM KHACHHANG";
+                SqlCommand cmd = new SqlCommand(query, conn);
+                conn.Open();
+                SqlDataReader rdr = cmd.ExecuteReader();
+                while (rdr.Read())
+                {
+                    int makh;
+                    makh = rdr.GetInt32(0);
+                    list.Add(makh);
+                }
+            }
+            return list;
+        }
+
+        public List<int> GetListMaDH_From_DONHANG()
+        {
+            List<int> list = new List<int>();
+            using (SqlConnection conn = new SqlConnection(connectionString))
+            {
+                string query = "SELECT MADH AS MADH FROM DONHANG";
+                SqlCommand cmd = new SqlCommand(query, conn);
+                conn.Open();
+                SqlDataReader rdr = cmd.ExecuteReader();
+                while (rdr.Read())
+                {
+                    int madh;
+                    madh = rdr.GetInt32(0);
+                    list.Add(madh);
+                }
+            }
+            return list;
+        }
+
         public DataTable GetAllNV_TEN_QUYEN()
         {
             using (SqlConnection conn = new SqlConnection(connectionString))
@@ -344,11 +382,13 @@ namespace DOAN_DAL
             using (SqlConnection conn = new SqlConnection(connectionString))
             {
                 conn.Open();
-                string query = "INSERT INTO SANPHAM (TENSP, GIA, KICHTHUOC) VALUES (@TENSP, @GIA, @KICHTHUOC)";
+                string query = "INSERT INTO SANPHAM (TENSP, GIA, KICHTHUOC, DUONGDAN) VALUES (@TENSP, @GIA, @KICHTHUOC, @DUONGDAN)";
                 SqlCommand cmd = new SqlCommand(query, conn);
                 cmd.Parameters.AddWithValue("@TENSP", sp.TENSP);
                 cmd.Parameters.AddWithValue("@GIA", sp.GIA);
                 cmd.Parameters.AddWithValue("@KICHTHUOC", sp.KICHTHUOC ?? (object)DBNull.Value);
+                cmd.Parameters.AddWithValue("@DUONGDAN", sp.DUONGDAN);
+
 
                 return cmd.ExecuteNonQuery() > 0;
             }
@@ -360,12 +400,14 @@ namespace DOAN_DAL
             using (SqlConnection conn = new SqlConnection(connectionString))
             {
                 conn.Open();
-                string query = "UPDATE SANPHAM SET TENSP = @TENSP, GIA = @GIA, KICHTHUOC = @KICHTHUOC WHERE MASP = @MASP";
+                string query = "UPDATE SANPHAM SET TENSP = @TENSP, GIA = @GIA, KICHTHUOC = @KICHTHUOC, DUONGDAN = @DUONGDAN WHERE MASP = @MASP";
                 SqlCommand cmd = new SqlCommand(query, conn);
                 cmd.Parameters.AddWithValue("@MASP", sp.MASP);
                 cmd.Parameters.AddWithValue("@TENSP", sp.TENSP);
                 cmd.Parameters.AddWithValue("@GIA", sp.GIA);
                 cmd.Parameters.AddWithValue("@KICHTHUOC", sp.KICHTHUOC ?? (object)DBNull.Value);
+                cmd.Parameters.AddWithValue("@DUONGDAN", sp.DUONGDAN);
+
 
                 return cmd.ExecuteNonQuery() > 0;
             }
@@ -511,10 +553,11 @@ namespace DOAN_DAL
             using (SqlConnection conn = new SqlConnection(connectionString))
             {
                 conn.Open();
-                string query = "INSERT INTO DONHANG (MAKH, NGAYLAP, TONGGIA) VALUES (@MAKH, @NGAYLAP, @TONGGIA)";
+                string query = "INSERT INTO DONHANG (MAKH, MANV, NGAYLAP, TONGGIA) VALUES (@MAKH, @MANV, @NGAYLAP, @TONGGIA)";
                 SqlCommand cmd = new SqlCommand(query, conn);
                 cmd.Parameters.AddWithValue("@MAKH", dh.MAKH);
-                cmd.Parameters.AddWithValue("@NGAYLAP", dh.NGAYLAP);
+                cmd.Parameters.AddWithValue("@MANV", dh.MANV);
+                cmd.Parameters.AddWithValue("@NGAYLAP", "2024-10-10");
                 cmd.Parameters.AddWithValue("@TONGGIA", dh.TONGGIA);
 
                 return cmd.ExecuteNonQuery() > 0;

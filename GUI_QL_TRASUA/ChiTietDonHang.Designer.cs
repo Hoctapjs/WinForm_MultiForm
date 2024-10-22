@@ -28,181 +28,168 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.lbl_username = new System.Windows.Forms.Label();
-            this.txt_madh = new System.Windows.Forms.TextBox();
-            this.txt_masp = new System.Windows.Forms.TextBox();
-            this.txt_soluong = new System.Windows.Forms.TextBox();
-            this.txt_gia = new System.Windows.Forms.TextBox();
-            this.btn_them = new System.Windows.Forms.Button();
-            this.btn_xoa = new System.Windows.Forms.Button();
-            this.btn_sua = new System.Windows.Forms.Button();
-            this.btn_thoat = new System.Windows.Forms.Button();
             this.dataGridView_ChiTietDonHang = new System.Windows.Forms.DataGridView();
-            this.cbo_madh = new System.Windows.Forms.ComboBox();
+            this.panel_tinhnang = new System.Windows.Forms.Panel();
             this.cbo_masp = new System.Windows.Forms.ComboBox();
+            this.cbo_madh = new System.Windows.Forms.ComboBox();
+            this.btn_sua = new System.Windows.Forms.Button();
+            this.btn_xoa = new System.Windows.Forms.Button();
+            this.btn_them = new System.Windows.Forms.Button();
+            this.txt_gia = new System.Windows.Forms.TextBox();
+            this.txt_soluong = new System.Windows.Forms.TextBox();
+            this.txt_masp = new System.Windows.Forms.TextBox();
+            this.txt_madh = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView_ChiTietDonHang)).BeginInit();
+            this.panel_tinhnang.SuspendLayout();
             this.SuspendLayout();
             // 
-            // lbl_username
+            // dataGridView_ChiTietDonHang
             // 
-            this.lbl_username.AutoSize = true;
-            this.lbl_username.BackColor = System.Drawing.Color.Black;
-            this.lbl_username.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lbl_username.ForeColor = System.Drawing.Color.Yellow;
-            this.lbl_username.Location = new System.Drawing.Point(12, 19);
-            this.lbl_username.Name = "lbl_username";
-            this.lbl_username.Size = new System.Drawing.Size(63, 25);
-            this.lbl_username.TabIndex = 0;
-            this.lbl_username.Text = "label1";
+            this.dataGridView_ChiTietDonHang.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.dataGridView_ChiTietDonHang.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dataGridView_ChiTietDonHang.BackgroundColor = System.Drawing.Color.White;
+            this.dataGridView_ChiTietDonHang.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView_ChiTietDonHang.Location = new System.Drawing.Point(0, 0);
+            this.dataGridView_ChiTietDonHang.Name = "dataGridView_ChiTietDonHang";
+            this.dataGridView_ChiTietDonHang.RowHeadersWidth = 51;
+            this.dataGridView_ChiTietDonHang.RowTemplate.Height = 29;
+            this.dataGridView_ChiTietDonHang.Size = new System.Drawing.Size(920, 530);
+            this.dataGridView_ChiTietDonHang.TabIndex = 10;
             // 
-            // txt_madh
+            // panel_tinhnang
             // 
-            this.txt_madh.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.txt_madh.Location = new System.Drawing.Point(970, 108);
-            this.txt_madh.Name = "txt_madh";
-            this.txt_madh.PlaceholderText = "Mã đơn hàng";
-            this.txt_madh.Size = new System.Drawing.Size(183, 32);
-            this.txt_madh.TabIndex = 1;
+            this.panel_tinhnang.BackColor = System.Drawing.Color.RoyalBlue;
+            this.panel_tinhnang.Controls.Add(this.cbo_masp);
+            this.panel_tinhnang.Controls.Add(this.cbo_madh);
+            this.panel_tinhnang.Controls.Add(this.btn_sua);
+            this.panel_tinhnang.Controls.Add(this.btn_xoa);
+            this.panel_tinhnang.Controls.Add(this.btn_them);
+            this.panel_tinhnang.Controls.Add(this.txt_gia);
+            this.panel_tinhnang.Controls.Add(this.txt_soluong);
+            this.panel_tinhnang.Controls.Add(this.txt_masp);
+            this.panel_tinhnang.Controls.Add(this.txt_madh);
+            this.panel_tinhnang.Dock = System.Windows.Forms.DockStyle.Right;
+            this.panel_tinhnang.Location = new System.Drawing.Point(920, 0);
+            this.panel_tinhnang.Name = "panel_tinhnang";
+            this.panel_tinhnang.Size = new System.Drawing.Size(256, 530);
+            this.panel_tinhnang.TabIndex = 15;
             // 
-            // txt_masp
+            // cbo_masp
             // 
-            this.txt_masp.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.txt_masp.Location = new System.Drawing.Point(970, 158);
-            this.txt_masp.Name = "txt_masp";
-            this.txt_masp.PlaceholderText = "Mã sản phẩm";
-            this.txt_masp.Size = new System.Drawing.Size(183, 32);
-            this.txt_masp.TabIndex = 2;
+            this.cbo_masp.FormattingEnabled = true;
+            this.cbo_masp.Location = new System.Drawing.Point(37, 91);
+            this.cbo_masp.Name = "cbo_masp";
+            this.cbo_masp.Size = new System.Drawing.Size(183, 28);
+            this.cbo_masp.TabIndex = 21;
             // 
-            // txt_soluong
+            // cbo_madh
             // 
-            this.txt_soluong.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.txt_soluong.Location = new System.Drawing.Point(970, 208);
-            this.txt_soluong.Name = "txt_soluong";
-            this.txt_soluong.PlaceholderText = "Số lượng";
-            this.txt_soluong.Size = new System.Drawing.Size(183, 32);
-            this.txt_soluong.TabIndex = 3;
-            // 
-            // txt_gia
-            // 
-            this.txt_gia.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.txt_gia.Location = new System.Drawing.Point(970, 258);
-            this.txt_gia.Name = "txt_gia";
-            this.txt_gia.PlaceholderText = "Giá";
-            this.txt_gia.Size = new System.Drawing.Size(183, 32);
-            this.txt_gia.TabIndex = 4;
-            // 
-            // btn_them
-            // 
-            this.btn_them.BackColor = System.Drawing.Color.Black;
-            this.btn_them.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btn_them.ForeColor = System.Drawing.Color.Orange;
-            this.btn_them.Location = new System.Drawing.Point(970, 312);
-            this.btn_them.Name = "btn_them";
-            this.btn_them.Size = new System.Drawing.Size(183, 38);
-            this.btn_them.TabIndex = 6;
-            this.btn_them.Text = "Thêm";
-            this.btn_them.UseVisualStyleBackColor = false;
-            this.btn_them.Click += new System.EventHandler(this.btn_them_Click);
-            // 
-            // btn_xoa
-            // 
-            this.btn_xoa.BackColor = System.Drawing.Color.Black;
-            this.btn_xoa.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btn_xoa.ForeColor = System.Drawing.Color.Orange;
-            this.btn_xoa.Location = new System.Drawing.Point(970, 365);
-            this.btn_xoa.Name = "btn_xoa";
-            this.btn_xoa.Size = new System.Drawing.Size(183, 38);
-            this.btn_xoa.TabIndex = 7;
-            this.btn_xoa.Text = "Xóa";
-            this.btn_xoa.UseVisualStyleBackColor = false;
-            this.btn_xoa.Click += new System.EventHandler(this.btn_xoa_Click);
+            this.cbo_madh.FormattingEnabled = true;
+            this.cbo_madh.Location = new System.Drawing.Point(37, 45);
+            this.cbo_madh.Name = "cbo_madh";
+            this.cbo_madh.Size = new System.Drawing.Size(183, 28);
+            this.cbo_madh.TabIndex = 20;
             // 
             // btn_sua
             // 
             this.btn_sua.BackColor = System.Drawing.Color.Black;
             this.btn_sua.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btn_sua.ForeColor = System.Drawing.Color.Orange;
-            this.btn_sua.Location = new System.Drawing.Point(970, 418);
+            this.btn_sua.Location = new System.Drawing.Point(37, 447);
             this.btn_sua.Name = "btn_sua";
             this.btn_sua.Size = new System.Drawing.Size(183, 38);
-            this.btn_sua.TabIndex = 8;
+            this.btn_sua.TabIndex = 19;
             this.btn_sua.Text = "Sửa";
             this.btn_sua.UseVisualStyleBackColor = false;
-            this.btn_sua.Click += new System.EventHandler(this.btn_sua_Click);
             // 
-            // btn_thoat
+            // btn_xoa
             // 
-            this.btn_thoat.BackColor = System.Drawing.Color.Black;
-            this.btn_thoat.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btn_thoat.ForeColor = System.Drawing.Color.Orange;
-            this.btn_thoat.Location = new System.Drawing.Point(970, 471);
-            this.btn_thoat.Name = "btn_thoat";
-            this.btn_thoat.Size = new System.Drawing.Size(183, 38);
-            this.btn_thoat.TabIndex = 9;
-            this.btn_thoat.Text = "Thoát";
-            this.btn_thoat.UseVisualStyleBackColor = false;
-            this.btn_thoat.Click += new System.EventHandler(this.btn_thoat_Click);
+            this.btn_xoa.BackColor = System.Drawing.Color.Black;
+            this.btn_xoa.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btn_xoa.ForeColor = System.Drawing.Color.Orange;
+            this.btn_xoa.Location = new System.Drawing.Point(37, 394);
+            this.btn_xoa.Name = "btn_xoa";
+            this.btn_xoa.Size = new System.Drawing.Size(183, 38);
+            this.btn_xoa.TabIndex = 18;
+            this.btn_xoa.Text = "Xóa";
+            this.btn_xoa.UseVisualStyleBackColor = false;
             // 
-            // dataGridView_ChiTietDonHang
+            // btn_them
             // 
-            this.dataGridView_ChiTietDonHang.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dataGridView_ChiTietDonHang.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView_ChiTietDonHang.Location = new System.Drawing.Point(12, 77);
-            this.dataGridView_ChiTietDonHang.Name = "dataGridView_ChiTietDonHang";
-            this.dataGridView_ChiTietDonHang.RowHeadersWidth = 51;
-            this.dataGridView_ChiTietDonHang.RowTemplate.Height = 29;
-            this.dataGridView_ChiTietDonHang.Size = new System.Drawing.Size(938, 441);
-            this.dataGridView_ChiTietDonHang.TabIndex = 10;
+            this.btn_them.BackColor = System.Drawing.Color.Black;
+            this.btn_them.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btn_them.ForeColor = System.Drawing.Color.Orange;
+            this.btn_them.Location = new System.Drawing.Point(37, 341);
+            this.btn_them.Name = "btn_them";
+            this.btn_them.Size = new System.Drawing.Size(183, 38);
+            this.btn_them.TabIndex = 17;
+            this.btn_them.Text = "Thêm";
+            this.btn_them.UseVisualStyleBackColor = false;
             // 
-            // cbo_madh
+            // txt_gia
             // 
-            this.cbo_madh.FormattingEnabled = true;
-            this.cbo_madh.Location = new System.Drawing.Point(970, 16);
-            this.cbo_madh.Name = "cbo_madh";
-            this.cbo_madh.Size = new System.Drawing.Size(183, 28);
-            this.cbo_madh.TabIndex = 11;
+            this.txt_gia.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txt_gia.Location = new System.Drawing.Point(37, 287);
+            this.txt_gia.Name = "txt_gia";
+            this.txt_gia.PlaceholderText = "Giá";
+            this.txt_gia.Size = new System.Drawing.Size(183, 32);
+            this.txt_gia.TabIndex = 16;
             // 
-            // cbo_masp
+            // txt_soluong
             // 
-            this.cbo_masp.FormattingEnabled = true;
-            this.cbo_masp.Location = new System.Drawing.Point(970, 62);
-            this.cbo_masp.Name = "cbo_masp";
-            this.cbo_masp.Size = new System.Drawing.Size(183, 28);
-            this.cbo_masp.TabIndex = 12;
+            this.txt_soluong.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txt_soluong.Location = new System.Drawing.Point(37, 237);
+            this.txt_soluong.Name = "txt_soluong";
+            this.txt_soluong.PlaceholderText = "Số lượng";
+            this.txt_soluong.Size = new System.Drawing.Size(183, 32);
+            this.txt_soluong.TabIndex = 15;
+            // 
+            // txt_masp
+            // 
+            this.txt_masp.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txt_masp.Location = new System.Drawing.Point(37, 187);
+            this.txt_masp.Name = "txt_masp";
+            this.txt_masp.PlaceholderText = "Mã sản phẩm";
+            this.txt_masp.Size = new System.Drawing.Size(183, 32);
+            this.txt_masp.TabIndex = 14;
+            // 
+            // txt_madh
+            // 
+            this.txt_madh.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txt_madh.Location = new System.Drawing.Point(37, 137);
+            this.txt_madh.Name = "txt_madh";
+            this.txt_madh.PlaceholderText = "Mã đơn hàng";
+            this.txt_madh.Size = new System.Drawing.Size(183, 32);
+            this.txt_madh.TabIndex = 13;
             // 
             // ChiTietDonHang
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::GUI_QL_TRASUA.Properties.Resources.Layer_111;
+            this.BackColor = System.Drawing.Color.White;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1176, 530);
-            this.Controls.Add(this.cbo_masp);
-            this.Controls.Add(this.cbo_madh);
             this.Controls.Add(this.dataGridView_ChiTietDonHang);
-            this.Controls.Add(this.btn_thoat);
-            this.Controls.Add(this.btn_sua);
-            this.Controls.Add(this.btn_xoa);
-            this.Controls.Add(this.btn_them);
-            this.Controls.Add(this.txt_gia);
-            this.Controls.Add(this.txt_soluong);
-            this.Controls.Add(this.txt_masp);
-            this.Controls.Add(this.txt_madh);
-            this.Controls.Add(this.lbl_username);
+            this.Controls.Add(this.panel_tinhnang);
             this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "ChiTietDonHang";
             this.Text = "ChiTietDonHang";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView_ChiTietDonHang)).EndInit();
+            this.panel_tinhnang.ResumeLayout(false);
+            this.panel_tinhnang.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
         #endregion
 
         private DataGridView dataGridView_ChiTietDonHang;
-        private Button btn_thoat;
+        private Panel panel_tinhnang;
+        private ComboBox cbo_masp;
+        private ComboBox cbo_madh;
         private Button btn_sua;
         private Button btn_xoa;
         private Button btn_them;
@@ -210,8 +197,5 @@
         private TextBox txt_soluong;
         private TextBox txt_masp;
         private TextBox txt_madh;
-        private Label lbl_username;
-        private ComboBox cbo_madh;
-        private ComboBox cbo_masp;
     }
 }

@@ -12,7 +12,6 @@ namespace DOAN_DTO
         public string TENSP { get; set; } // Tên sản phẩm
         public decimal GIA { get; set; } // Giá sản phẩm
         public string KICHTHUOC { get; set; } // Kích thước sản phẩm
-
         public string DUONGDAN { get; set; }
     }
 }

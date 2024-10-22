@@ -21,8 +21,17 @@ namespace GUI_QL_TRASUA
             quyen = quyen1;
         }
 
+        public Home_Moi(int manv1, string username1, string quyen1)
+        {
+            InitializeComponent();
+            username = username1;
+            quyen = quyen1;
+            manv = manv1;
+        }
+
         string username;
         string quyen;
+        int manv;
 
         private void ThoatToolStripMenuItem_Click(object sender, EventArgs e)
         {
@@ -61,6 +70,7 @@ namespace GUI_QL_TRASUA
             menuSanPhamToolStripMenuItem.Visible = false;
             menuThongKeToolStripMenuItem.Visible = false;
 
+
             if (quyen == "Admin")
             {
                 menuNhanVienToolStripMenuItem.Visible = true;
@@ -88,7 +98,7 @@ namespace GUI_QL_TRASUA
 
         public void HienThiFormOrder ()
         {
-            Order order = new Order(username, quyen);
+            Order order = new Order(manv, username, quyen);
             order.TopLevel = false;
             order.FormBorderStyle = FormBorderStyle.None;
             order.Dock = DockStyle.Fill;
@@ -96,6 +106,42 @@ namespace GUI_QL_TRASUA
             panel1.Controls.Clear();
             panel1.Controls.Add(order);
             order.Show();
+        }
+
+        private void menuXemKhachHangToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            KhachHang khach = new KhachHang(username, quyen);
+            khach.TopLevel = false;
+            khach.FormBorderStyle = FormBorderStyle.None;
+            khach.Dock = DockStyle.Fill;
+
+            panel1.Controls.Clear();
+            panel1.Controls.Add(khach);
+            khach.Show();
+        }
+
+        private void menuXemHoaDonToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            DonHang donhang = new DonHang(username, quyen);
+            donhang.TopLevel = false;
+            donhang.FormBorderStyle = FormBorderStyle.None;
+            donhang.Dock = DockStyle.Fill;
+
+            panel1.Controls.Clear();
+            panel1.Controls.Add(donhang);
+            donhang.Show();
+        }
+
+        private void menuXemChiTietHoaDonToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ChiTietDonHang chitietdonhang = new ChiTietDonHang(username, quyen);
+            chitietdonhang.TopLevel = false;
+            chitietdonhang.FormBorderStyle = FormBorderStyle.None;
+            chitietdonhang.Dock = DockStyle.Fill;
+
+            panel1.Controls.Clear();
+            panel1.Controls.Add(chitietdonhang);
+            chitietdonhang.Show();
         }
     }
 }

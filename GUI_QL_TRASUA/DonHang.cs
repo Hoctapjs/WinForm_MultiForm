@@ -31,7 +31,7 @@ namespace GUI_QL_TRASUA
         {
             BLL bll = new BLL();
             dataGridView_DonHang.DataSource = bll.GetAllDonHang();
-            lbl_username.Text = username;
+            //lbl_username.Text = username;
             cbo_makh.DataSource = bll.GetMaKH_From_KHACHHANG();
             cbo_makh.DisplayMember = "MAKH";
             cbo_makh.ValueMember = "MAKH";

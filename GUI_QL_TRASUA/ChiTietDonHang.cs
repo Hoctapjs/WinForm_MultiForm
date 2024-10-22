@@ -30,7 +30,7 @@ namespace GUI_QL_TRASUA
         {
             BLL bll = new BLL();
             dataGridView_ChiTietDonHang.DataSource = bll.GetAllChiTietDonHang();
-            lbl_username.Text = username;
+            //lbl_username.Text = username;
             cbo_madh.DataSource = bll.GetMaDH_From_DONHANG();
             cbo_madh.DisplayMember = "MADH";
             cbo_madh.ValueMember = "MADH";

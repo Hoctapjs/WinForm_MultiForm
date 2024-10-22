@@ -89,6 +89,7 @@
             this.menuXemKhachHangToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.D1)));
             this.menuXemKhachHangToolStripMenuItem.Size = new System.Drawing.Size(348, 30);
             this.menuXemKhachHangToolStripMenuItem.Text = "Xem Khách Hàng";
+            this.menuXemKhachHangToolStripMenuItem.Click += new System.EventHandler(this.menuXemKhachHangToolStripMenuItem_Click);
             // 
             // menuXemHoaDonToolStripMenuItem
             // 
@@ -97,6 +98,7 @@
             this.menuXemHoaDonToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.D2)));
             this.menuXemHoaDonToolStripMenuItem.Size = new System.Drawing.Size(348, 30);
             this.menuXemHoaDonToolStripMenuItem.Text = "Xem Hóa Đơn";
+            this.menuXemHoaDonToolStripMenuItem.Click += new System.EventHandler(this.menuXemHoaDonToolStripMenuItem_Click);
             // 
             // menuXemChiTietHoaDonToolStripMenuItem
             // 
@@ -105,6 +107,7 @@
             this.menuXemChiTietHoaDonToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.D3)));
             this.menuXemChiTietHoaDonToolStripMenuItem.Size = new System.Drawing.Size(348, 30);
             this.menuXemChiTietHoaDonToolStripMenuItem.Text = "Xem Chi Tiết Hóa Đơn";
+            this.menuXemChiTietHoaDonToolStripMenuItem.Click += new System.EventHandler(this.menuXemChiTietHoaDonToolStripMenuItem_Click);
             // 
             // menuThoatToolStripMenuItem
             // 

@@ -2,6 +2,7 @@
 using DOAN_DAL;
 using DOAN_DTO;
 using System.IO;
+using System.Data.SqlClient;
 
 namespace DOAN_BLL
 
@@ -66,6 +67,18 @@ namespace DOAN_BLL
         {
             DAL dal = new DAL();
             return dal.GetMaKH_From_KHACHHANG();
+        }
+
+        public List<int> GetListMaKH_From_KHACHHANG()
+        {
+            DAL dal = new DAL();
+            return dal.GetListMaKH_From_KHACHHANG();
+        }
+
+        public List<int> GetListMaDH_From_DONHANG()
+        {
+            DAL dal = new DAL();
+            return dal.GetListMaDH_From_DONHANG();
         }
 
 

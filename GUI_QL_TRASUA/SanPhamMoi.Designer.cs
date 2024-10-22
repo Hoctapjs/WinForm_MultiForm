@@ -30,6 +30,7 @@
         {
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.panel_tinhnang = new System.Windows.Forms.Panel();
+            this.btn_layduongdan = new System.Windows.Forms.Button();
             this.cbo_kichthuoc = new System.Windows.Forms.ComboBox();
             this.txt_tensp = new System.Windows.Forms.TextBox();
             this.txt_gia = new System.Windows.Forms.TextBox();
@@ -37,7 +38,6 @@
             this.btn_sua = new System.Windows.Forms.Button();
             this.btn_them = new System.Windows.Forms.Button();
             this.btn_xoa = new System.Windows.Forms.Button();
-            this.btn_layduongdan = new System.Windows.Forms.Button();
             this.panel_tinhnang.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -69,6 +69,19 @@
             this.panel_tinhnang.Name = "panel_tinhnang";
             this.panel_tinhnang.Size = new System.Drawing.Size(256, 670);
             this.panel_tinhnang.TabIndex = 13;
+            // 
+            // btn_layduongdan
+            // 
+            this.btn_layduongdan.BackColor = System.Drawing.Color.Black;
+            this.btn_layduongdan.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btn_layduongdan.ForeColor = System.Drawing.Color.Orange;
+            this.btn_layduongdan.Location = new System.Drawing.Point(34, 214);
+            this.btn_layduongdan.Name = "btn_layduongdan";
+            this.btn_layduongdan.Size = new System.Drawing.Size(183, 38);
+            this.btn_layduongdan.TabIndex = 12;
+            this.btn_layduongdan.Text = "Chọn ảnh";
+            this.btn_layduongdan.UseVisualStyleBackColor = false;
+            this.btn_layduongdan.Click += new System.EventHandler(this.btn_layduongdan_Click);
             // 
             // cbo_kichthuoc
             // 
@@ -120,6 +133,7 @@
             this.btn_sua.TabIndex = 8;
             this.btn_sua.Text = "Sửa";
             this.btn_sua.UseVisualStyleBackColor = false;
+            this.btn_sua.Click += new System.EventHandler(this.btn_sua_Click);
             // 
             // btn_them
             // 
@@ -132,6 +146,7 @@
             this.btn_them.TabIndex = 6;
             this.btn_them.Text = "Thêm";
             this.btn_them.UseVisualStyleBackColor = false;
+            this.btn_them.Click += new System.EventHandler(this.btn_them_Click);
             // 
             // btn_xoa
             // 
@@ -144,19 +159,7 @@
             this.btn_xoa.TabIndex = 7;
             this.btn_xoa.Text = "Xóa";
             this.btn_xoa.UseVisualStyleBackColor = false;
-            // 
-            // btn_layduongdan
-            // 
-            this.btn_layduongdan.BackColor = System.Drawing.Color.Black;
-            this.btn_layduongdan.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btn_layduongdan.ForeColor = System.Drawing.Color.Orange;
-            this.btn_layduongdan.Location = new System.Drawing.Point(34, 214);
-            this.btn_layduongdan.Name = "btn_layduongdan";
-            this.btn_layduongdan.Size = new System.Drawing.Size(183, 38);
-            this.btn_layduongdan.TabIndex = 12;
-            this.btn_layduongdan.Text = "Chọn ảnh";
-            this.btn_layduongdan.UseVisualStyleBackColor = false;
-            this.btn_layduongdan.Click += new System.EventHandler(this.btn_layduongdan_Click);
+            this.btn_xoa.Click += new System.EventHandler(this.btn_xoa_Click);
             // 
             // SanPhamMoi
             // 

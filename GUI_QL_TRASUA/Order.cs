@@ -21,8 +21,17 @@ namespace GUI_QL_TRASUA
             quyen = quyen1;
         }
 
+        public Order(int manv1, string username1, string quyen1)
+        {
+            InitializeComponent();
+            username = username1;
+            quyen = quyen1;
+            manv = manv1;
+        }
+
         string username;
         string quyen;
+        int manv;
 
 
         int masp1;
@@ -32,14 +41,61 @@ namespace GUI_QL_TRASUA
         decimal tongtien1mon = 0;
         decimal tongtienall = 0;
 
+        int makh_moi;
+        int madh_moi;
+
+
         List<OrderDTO> listorder = new List<OrderDTO>();
 
 
 
         private void SanPhamMoi_Load(object sender, EventArgs e)
         {
+            List<int> listmakh = new List<int>();
+            List<int> listmadh = new List<int>();
             List<SANPHAMDTO> listsanpham = new List<SANPHAMDTO>();
             BLL bll = new BLL();
+           
+            KHACHHANGDTO kh = new KHACHHANGDTO
+            {
+                TENKH = "null",
+                SODT = "null",
+                DIACHI = "null"
+            };
+            bool isSuccesskh = bll.ThemKhachHang(kh);
+
+            listmakh = bll.GetListMaKH_From_KHACHHANG();
+            makh_moi = listmakh[0];
+            foreach (var item in listmakh)
+            {
+                if (item > makh_moi)
+                {
+                    makh_moi = item;
+                }
+            }
+
+            DONHANGDTO dh = new DONHANGDTO
+            {
+                MAKH = makh_moi,
+                MANV = manv,
+                NGAYLAP = "",
+                TONGGIA = 0
+            };
+            bool isSuccessdh = bll.ThemDonHang(dh);
+
+            listmadh = bll.GetListMaDH_From_DONHANG();
+            madh_moi = listmadh[0];
+            foreach (var item in listmadh)
+            {
+                if (item > madh_moi)
+                {
+                    madh_moi = item;
+                }
+            }
+
+
+
+
             listsanpham = bll.GetListSanPham();
             LoadProducts(listsanpham);
         }
@@ -185,13 +241,33 @@ namespace GUI_QL_TRASUA
         private void btn_thanhtoan_Click(object sender, EventArgs e)
         {
             string dsmon = "";
-
+            BLL bll = new BLL();
             foreach (var item in listorder)
             {
-                dsmon += item.o_tensp + " : " + item.o_soluong+ "\n";
+                dsmon += item.o_tensp + " : " + item.o_soluong + "\n";
+                CHITIETDONHANGDTO ct = new CHITIETDONHANGDTO
+                {
+                    MADH = madh_moi,
+                    MASP = item.o_masp,
+                    SOLUONG = item.o_soluong,
+                    GIA = 0
+                };
+                bool isSuccess = bll.ThemChiTietDonHang(ct);
             }
 
             MessageBox.Show($"Tổng tiền hóa đơn đã ghi nhận là: {tongtienall}\n" + dsmon, "Xác Nhận");
+            // khi khởi động form order thì sẽ tạo mới 1 khách, lưu trữ mã khách, lấy mã khách đó tạo mới 1 đơn
+            // lưu trữ mã khách, mã đơn để chuẩn bị tạo chi tiết đơn hàng từ listorder
+            // có 2 chức năng là làm mới đơn (đã làm) và xóa đơn
+
+            // nếu làm mới đơn thì gọi lệnh tạo người dùng mới và đơn của người dùng mới đó
+
+            // nếu xóa đơn, thì sẽ dùng mã khách và mã đơn đã lưu trữ và xóa chúng trong cơ sở dữ liệu
+
+            // nếu thanh toán thì sẽ thực hiện:
+            // dùng listorder có được, duyệt qua các phần tử trong nó,
+            // sau khi duyệt qua 1 phần tử, truyền phần tử đó vào câu lệnh thêm bll, từ bll truyền vào câu lệnh thêm dal
+            // truyền vào dal để tạo chi tiết hóa đơn
 
         }
 
@@ -219,6 +295,16 @@ namespace GUI_QL_TRASUA
             txt_gia.Clear();
         }
 
+        private void btn_xoadon_Click(object sender, EventArgs e)
+        {
+            XoaDonVaKhach();
+        }
 
+        private void XoaDonVaKhach()
+        {
+            BLL bll = new BLL();
+            bool isSuccess2 = bll.XoaDonHang(madh_moi);
+            bool isSuccess1 = bll.XoaKhachHang(makh_moi);
+        }
     }
 }

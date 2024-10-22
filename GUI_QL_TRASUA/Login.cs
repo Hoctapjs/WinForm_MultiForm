@@ -35,13 +35,14 @@ namespace GUI_QL_TRASUA
 
             username = nhanVien.USERNAME;
             string quyen = nhanVien.QUYEN;
+            int ma = nhanVien.MANV;
 
             if (dangnhap)
             {
                 MessageBox.Show("Đăng Nhập Thành Công");
                 Login login = this;
                 login.Hide();
-                Home_Moi homemoi = new Home_Moi(username, quyen);
+                Home_Moi homemoi = new Home_Moi(ma, username, quyen);
                 homemoi.ShowDialog();
                 login.Close();
             }

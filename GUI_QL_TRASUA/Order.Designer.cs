@@ -38,6 +38,7 @@
             this.txt_soluong = new System.Windows.Forms.TextBox();
             this.btn_them = new System.Windows.Forms.Button();
             this.btn_xoa = new System.Windows.Forms.Button();
+            this.btn_xoadon = new System.Windows.Forms.Button();
             this.panel_tinhnang.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -56,6 +57,7 @@
             // panel_tinhnang
             // 
             this.panel_tinhnang.BackColor = System.Drawing.Color.RoyalBlue;
+            this.panel_tinhnang.Controls.Add(this.btn_xoadon);
             this.panel_tinhnang.Controls.Add(this.btn_lammoi);
             this.panel_tinhnang.Controls.Add(this.btn_thanhtoan);
             this.panel_tinhnang.Controls.Add(this.cbo_kichthuoc);
@@ -75,7 +77,7 @@
             this.btn_lammoi.BackColor = System.Drawing.Color.Black;
             this.btn_lammoi.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btn_lammoi.ForeColor = System.Drawing.Color.Orange;
-            this.btn_lammoi.Location = new System.Drawing.Point(8, 525);
+            this.btn_lammoi.Location = new System.Drawing.Point(8, 507);
             this.btn_lammoi.Name = "btn_lammoi";
             this.btn_lammoi.Size = new System.Drawing.Size(236, 63);
             this.btn_lammoi.TabIndex = 13;
@@ -88,7 +90,7 @@
             this.btn_thanhtoan.BackColor = System.Drawing.Color.Black;
             this.btn_thanhtoan.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btn_thanhtoan.ForeColor = System.Drawing.Color.Orange;
-            this.btn_thanhtoan.Location = new System.Drawing.Point(8, 432);
+            this.btn_thanhtoan.Location = new System.Drawing.Point(8, 420);
             this.btn_thanhtoan.Name = "btn_thanhtoan";
             this.btn_thanhtoan.Size = new System.Drawing.Size(236, 63);
             this.btn_thanhtoan.TabIndex = 12;
@@ -153,13 +155,26 @@
             this.btn_xoa.BackColor = System.Drawing.Color.Black;
             this.btn_xoa.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btn_xoa.ForeColor = System.Drawing.Color.Orange;
-            this.btn_xoa.Location = new System.Drawing.Point(8, 339);
+            this.btn_xoa.Location = new System.Drawing.Point(8, 333);
             this.btn_xoa.Name = "btn_xoa";
             this.btn_xoa.Size = new System.Drawing.Size(236, 63);
             this.btn_xoa.TabIndex = 7;
             this.btn_xoa.Text = "Xóa khỏi hóa đơn";
             this.btn_xoa.UseVisualStyleBackColor = false;
             this.btn_xoa.Click += new System.EventHandler(this.btn_xoa_Click);
+            // 
+            // btn_xoadon
+            // 
+            this.btn_xoadon.BackColor = System.Drawing.Color.Black;
+            this.btn_xoadon.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btn_xoadon.ForeColor = System.Drawing.Color.Orange;
+            this.btn_xoadon.Location = new System.Drawing.Point(8, 594);
+            this.btn_xoadon.Name = "btn_xoadon";
+            this.btn_xoadon.Size = new System.Drawing.Size(236, 63);
+            this.btn_xoadon.TabIndex = 14;
+            this.btn_xoadon.Text = "Xóa đơn";
+            this.btn_xoadon.UseVisualStyleBackColor = false;
+            this.btn_xoadon.Click += new System.EventHandler(this.btn_xoadon_Click);
             // 
             // Order
             // 
@@ -189,5 +204,6 @@
         private FlowLayoutPanel flowLayoutPanel1;
         private Button btn_thanhtoan;
         private Button btn_lammoi;
+        private Button btn_xoadon;
     }
 }
