@@ -80,5 +80,22 @@ namespace GUI_QL_TRASUA
             panel1.Controls.Add(sanphammoi);
             sanphammoi.Show();
         }
+
+        public void menuOrderToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            HienThiFormOrder();
+        }
+
+        public void HienThiFormOrder ()
+        {
+            Order order = new Order(username, quyen);
+            order.TopLevel = false;
+            order.FormBorderStyle = FormBorderStyle.None;
+            order.Dock = DockStyle.Fill;
+
+            panel1.Controls.Clear();
+            panel1.Controls.Add(order);
+            order.Show();
+        }
     }
 }

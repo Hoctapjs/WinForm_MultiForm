@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.menuOrderToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuCN_NhanVienToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.menuXemKhachHangToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuXemHoaDonToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -50,6 +51,7 @@
             this.menuStrip1.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.menuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.menuOrderToolStripMenuItem,
             this.menuCN_NhanVienToolStripMenuItem1,
             this.menuNhanVienToolStripMenuItem,
             this.menuSanPhamToolStripMenuItem,
@@ -59,6 +61,13 @@
             this.menuStrip1.Size = new System.Drawing.Size(986, 33);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
+            // 
+            // menuOrderToolStripMenuItem
+            // 
+            this.menuOrderToolStripMenuItem.Name = "menuOrderToolStripMenuItem";
+            this.menuOrderToolStripMenuItem.Size = new System.Drawing.Size(75, 29);
+            this.menuOrderToolStripMenuItem.Text = "Order";
+            this.menuOrderToolStripMenuItem.Click += new System.EventHandler(this.menuOrderToolStripMenuItem_Click);
             // 
             // menuCN_NhanVienToolStripMenuItem1
             // 
@@ -231,5 +240,6 @@
         private Label lbl_username;
         private Label lbl_quyen;
         private Label label4;
+        private ToolStripMenuItem menuOrderToolStripMenuItem;
     }
 }
