@@ -478,6 +478,19 @@ namespace DOAN_DAL
             }
         }
 
+        public bool SuaKhachHang(int makh, string thanhvien)
+        {
+            using (SqlConnection conn = new SqlConnection(connectionString))
+            {
+                conn.Open();
+                string query = "UPDATE KHACHHANG SET THANHVIEN = @THANHVIEN WHERE MAKH = @MAKH";
+                SqlCommand cmd = new SqlCommand(query, conn);
+                cmd.Parameters.AddWithValue("@MAKH", makh);
+                cmd.Parameters.AddWithValue("@THANHVIEN", thanhvien);
+                return cmd.ExecuteNonQuery() > 0;
+            }
+        }
+
         // Xóa khách hàng
         public bool XoaKhachHang(int maKH)
         {
@@ -487,8 +500,16 @@ namespace DOAN_DAL
                 string query = "DELETE FROM KHACHHANG WHERE MAKH = @MAKH";
                 SqlCommand cmd = new SqlCommand(query, conn);
                 cmd.Parameters.AddWithValue("@MAKH", maKH);
+                try
+                {
+                    return cmd.ExecuteNonQuery() > 0;
 
-                return cmd.ExecuteNonQuery() > 0;
+                }
+                catch (Exception)
+                {
+                    return false;
+                    throw;
+                }
             }
         }
 
@@ -539,8 +560,15 @@ namespace DOAN_DAL
                 string query = "DELETE FROM NHANVIEN WHERE MANV = @MANV";
                 SqlCommand cmd = new SqlCommand(query, conn);
                 cmd.Parameters.AddWithValue("@MANV", maNV);
-
-                return cmd.ExecuteNonQuery() > 0;
+                try
+                {
+                    return cmd.ExecuteNonQuery() > 0;
+                }
+                catch (Exception)
+                {
+                    return false;
+                    throw;
+                }
             }
         }
 
@@ -553,11 +581,10 @@ namespace DOAN_DAL
             using (SqlConnection conn = new SqlConnection(connectionString))
             {
                 conn.Open();
-                string query = "INSERT INTO DONHANG (MAKH, MANV, NGAYLAP, TONGGIA) VALUES (@MAKH, @MANV, @NGAYLAP, @TONGGIA)";
+                string query = "INSERT INTO DONHANG (MAKH, MANV, NGAYLAP, TONGGIA) VALUES (@MAKH, @MANV, GETDATE(), @TONGGIA)";
                 SqlCommand cmd = new SqlCommand(query, conn);
                 cmd.Parameters.AddWithValue("@MAKH", dh.MAKH);
                 cmd.Parameters.AddWithValue("@MANV", dh.MANV);
-                cmd.Parameters.AddWithValue("@NGAYLAP", "2024-10-10");
                 cmd.Parameters.AddWithValue("@TONGGIA", dh.TONGGIA);
 
                 return cmd.ExecuteNonQuery() > 0;
@@ -581,6 +608,19 @@ namespace DOAN_DAL
             }
         }
 
+        public bool SuaDonHang(int madonhang, int makm)
+        {
+            using (SqlConnection conn = new SqlConnection(connectionString))
+            {
+                conn.Open();
+                string query = "UPDATE DONHANG SET MAKM = @MAKM WHERE MADH = @MADH";
+                SqlCommand cmd = new SqlCommand(query, conn);
+                cmd.Parameters.AddWithValue("@MADH", madonhang);
+                cmd.Parameters.AddWithValue("@MAKM", makm);
+                return cmd.ExecuteNonQuery() > 0;
+            }
+        }
+
         // Xóa đơn hàng
         public bool XoaDonHang(int maDH)
         {
@@ -590,8 +630,15 @@ namespace DOAN_DAL
                 string query = "DELETE FROM DONHANG WHERE MADH = @MADH";
                 SqlCommand cmd = new SqlCommand(query, conn);
                 cmd.Parameters.AddWithValue("@MADH", maDH);
-
-                return cmd.ExecuteNonQuery() > 0;
+                try
+                {
+                    return cmd.ExecuteNonQuery() > 0;
+                }
+                catch (Exception)
+                {
+                    return false;
+                    throw;
+                }
             }
         }
 
@@ -679,7 +726,109 @@ namespace DOAN_DAL
             }
             return nhanVien;
         }
+        // tạm xong login
 
+        // BẮT ĐẦU khuyến mãi
+        // get all khuyến mãi
+
+        public DataTable GetAllKhuyenMai()
+        {
+            using (SqlConnection conn = new SqlConnection(connectionString))
+            {
+                conn.Open();
+                string query = "SELECT * FROM CHUONGTRINH_KHUYENMAI";
+                SqlDataAdapter adapter = new SqlDataAdapter(query, conn);
+                DataTable dataTable = new DataTable();
+                adapter.Fill(dataTable);
+                return dataTable;
+            }
+        }
+
+        public DataTable GetAll_Ma_KhuyenMai()
+        {
+            using (SqlConnection conn = new SqlConnection(connectionString))
+            {
+                conn.Open();
+                string query = "SELECT MAKM, TENKM FROM CHUONGTRINH_KHUYENMAI";
+                SqlDataAdapter adapter = new SqlDataAdapter(query, conn);
+                DataTable dataTable = new DataTable();
+                adapter.Fill(dataTable);
+                return dataTable;
+            }
+        }
+
+        // Thêm khuyến mãi
+        public bool ThemKhuyenMai(KHUYENMAIDTO km)
+        {
+            if (km.Ngaybd == DateTime.MinValue || km.Ngaybd == DateTime.MinValue)
+            {
+                using (SqlConnection conn = new SqlConnection(connectionString))
+                {
+                    conn.Open();
+                    string query = "INSERT INTO CHUONGTRINH_KHUYENMAI (TENKM, PHAMTRAM_KM) VALUES (@TENKM, @HESO)";
+                    SqlCommand cmd = new SqlCommand(query, conn);
+                    cmd.Parameters.AddWithValue("@TENKM", km.Tenkm);
+                    cmd.Parameters.AddWithValue("@HESO", km.Hesokm);
+
+                    return cmd.ExecuteNonQuery() > 0;
+                }
+            }
+            else
+            {
+                using (SqlConnection conn = new SqlConnection(connectionString))
+                {
+                    conn.Open();
+                    string query = "INSERT INTO CHUONGTRINH_KHUYENMAI (TENKM, NGAYBD, NGAYKT, PHAMTRAM_KM) VALUES (@TENKM, @NGAYBD, @NGAYKT, @HESO)";
+                    SqlCommand cmd = new SqlCommand(query, conn);
+                    cmd.Parameters.AddWithValue("@TENKM", km.Tenkm);
+                    cmd.Parameters.AddWithValue("@NGAYBD", km.Ngaybd);
+                    cmd.Parameters.AddWithValue("@NGAYKT", km.Ngaykt);
+                    cmd.Parameters.AddWithValue("@HESO", km.Hesokm);
+
+                    return cmd.ExecuteNonQuery() > 0;
+                }
+            }
+
+            
+        }
+
+        // Sửa khuyến mãi
+        public bool SuaKhuyenMai(KHUYENMAIDTO km)
+        {
+            using (SqlConnection conn = new SqlConnection(connectionString))
+            {
+                conn.Open();
+                string query = "UPDATE CHUONGTRINH_KHUYENMAI SET TENKM = @TENKM, NGAYBD = @NGAYBD, NGAYKT = @NGAYKT, PHAMTRAM_KM = @HESO WHERE MAKM = @MAKM";
+                SqlCommand cmd = new SqlCommand(query, conn);
+                cmd.Parameters.AddWithValue("@TENKM", km.Tenkm);
+                cmd.Parameters.AddWithValue("@NGAYBD", km.Ngaybd);
+                cmd.Parameters.AddWithValue("@NGAYKT", km.Ngaykt);
+                cmd.Parameters.AddWithValue("@HESO", km.Hesokm);
+
+                return cmd.ExecuteNonQuery() > 0;
+            }
+        }
+
+        // Xóa khuyến mãi
+        public bool XoaKhuyenMai(int MAKM)
+        {
+            using (SqlConnection conn = new SqlConnection(connectionString))
+            {
+                conn.Open();
+                string query = "DELETE FROM CHUONGTRINH_KHUYENMAI WHERE MAKM = @MAKM";
+                SqlCommand cmd = new SqlCommand(query, conn);
+                cmd.Parameters.AddWithValue("@MAKM", MAKM);
+                try
+                {
+                    return cmd.ExecuteNonQuery() > 0;
+                }
+                catch (Exception)
+                {
+                    return false;
+                    throw;
+                }
+            }
+        }
 
 
     }

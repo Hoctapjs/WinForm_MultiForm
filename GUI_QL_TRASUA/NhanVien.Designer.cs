@@ -99,6 +99,9 @@
             this.btn_them.Text = "Thêm";
             this.btn_them.UseVisualStyleBackColor = false;
             this.btn_them.Click += new System.EventHandler(this.btn_them_Click);
+            this.btn_them.Image = global::GUI_QL_TRASUA.Properties.Resources.add_small;
+            this.btn_them.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btn_them.Padding = new System.Windows.Forms.Padding(5, 0, 5, 0);
             // 
             // btn_xoa
             // 
@@ -112,6 +115,9 @@
             this.btn_xoa.Text = "Xóa";
             this.btn_xoa.UseVisualStyleBackColor = false;
             this.btn_xoa.Click += new System.EventHandler(this.btn_xoa_Click);
+            this.btn_xoa.Image = global::GUI_QL_TRASUA.Properties.Resources.remove_small;
+            this.btn_xoa.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btn_xoa.Padding = new System.Windows.Forms.Padding(5, 0, 5, 0);
             // 
             // btn_sua
             // 
@@ -125,6 +131,9 @@
             this.btn_sua.Text = "Sửa";
             this.btn_sua.UseVisualStyleBackColor = false;
             this.btn_sua.Click += new System.EventHandler(this.btn_sua_Click);
+            this.btn_sua.Image = global::GUI_QL_TRASUA.Properties.Resources.update_small;
+            this.btn_sua.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btn_sua.Padding = new System.Windows.Forms.Padding(5, 0, 5, 0);
             // 
             // dataGridView_NhanVien
             // 
@@ -140,6 +149,7 @@
             this.dataGridView_NhanVien.RowTemplate.Height = 29;
             this.dataGridView_NhanVien.Size = new System.Drawing.Size(921, 530);
             this.dataGridView_NhanVien.TabIndex = 10;
+            this.dataGridView_NhanVien.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView_NhanVien_CellClick);
             // 
             // panel_tinhnang
             // 

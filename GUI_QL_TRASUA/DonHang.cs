@@ -36,6 +36,11 @@ namespace GUI_QL_TRASUA
             cbo_makh.DisplayMember = "MAKH";
             cbo_makh.ValueMember = "MAKH";
 
+            DataTable khuyenmai_ma_ten = bll.GetAll_Ma_KhuyenMai();
+            cbo_makhuyenmai.DataSource = khuyenmai_ma_ten;
+            cbo_makhuyenmai.DisplayMember = "TENKM";
+            cbo_makhuyenmai.ValueMember = "MAKM";
+
         }
 
         private void btn_thoat_Click(object sender, EventArgs e)
@@ -110,6 +115,64 @@ namespace GUI_QL_TRASUA
             {
                 MessageBox.Show("Thất bại");
             }
+
+        }
+
+        private void dataGridView_DonHang_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (e.RowIndex >= 0)
+            {
+                try
+                {
+                    DataGridViewRow row = dataGridView_DonHang.Rows[e.RowIndex];
+
+                    txt_madh.Text = row.Cells[0].Value.ToString();
+                    txt_makh.Text = row.Cells[1].Value.ToString();
+
+                    txt_ngaylap.Text = row.Cells[3].Value.ToString();
+                    txt_tonggia.Text = row.Cells[4].Value.ToString();
+                    string makh = row.Cells[1].Value.ToString();
+                    if (!string.IsNullOrEmpty(makh))
+                    {
+                        //cbo_makh.Text = makh;
+                        cbo_makh.SelectedValue = makh;
+                    }
+                    else
+                    {
+                        cbo_makh.Text = "Không có";
+                    }
+                    string makm = row.Cells[5].Value.ToString();
+                    if (!string.IsNullOrEmpty(makm))
+                    {
+                        //cbo_makhuyenmai.Text = makm;
+                        cbo_makhuyenmai.SelectedValue = makm;
+                    }
+                    else
+                    {
+                        cbo_makhuyenmai.Text = "Không có";
+                    }
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show($"Có lỗi xảy ra: {ex.Message}", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+
+
+            }
+        }
+
+        private void btn_them_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btn_xoa_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btn_sua_Click_1(object sender, EventArgs e)
+        {
 
         }
     }

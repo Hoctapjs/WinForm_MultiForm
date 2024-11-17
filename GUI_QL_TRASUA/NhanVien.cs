@@ -104,5 +104,20 @@ namespace GUI_QL_TRASUA
                 MessageBox.Show("Thất bại");
             }
         }
+
+        private void dataGridView_NhanVien_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (e.RowIndex >= 0)
+            {
+                DataGridViewRow row = dataGridView_NhanVien.Rows[e.RowIndex];
+
+                txt_manv.Text = row.Cells[0].Value.ToString();
+                txt_tennv.Text = row.Cells[1].Value.ToString();
+                txt_quyen.Text = row.Cells[2].Value.ToString();
+                txt_username.Text = row.Cells[3].Value.ToString();
+                txt_password.Text = row.Cells[4].Value.ToString();
+
+            }
+        }
     }
 }

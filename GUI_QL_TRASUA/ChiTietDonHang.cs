@@ -116,5 +116,35 @@ namespace GUI_QL_TRASUA
                 MessageBox.Show("Thất bại");
             }
         }
+
+        private void dataGridView_ChiTietDonHang_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (e.RowIndex >= 0)
+            {
+                DataGridViewRow row = dataGridView_ChiTietDonHang.Rows[e.RowIndex];
+
+                txt_madh.Text = row.Cells[0].Value.ToString();
+                txt_masp.Text = row.Cells[1].Value.ToString();
+                txt_soluong.Text = row.Cells[2].Value.ToString();
+                txt_gia.Text = row.Cells[3].Value.ToString();
+                cbo_madh.SelectedValue = row.Cells[0].Value.ToString();
+                cbo_masp.SelectedValue = row.Cells[1].Value.ToString();
+            }
+        }
+
+        private void btn_them_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btn_xoa_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btn_sua_Click_1(object sender, EventArgs e)
+        {
+
+        }
     }
 }

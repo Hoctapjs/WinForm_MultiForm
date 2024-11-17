@@ -105,5 +105,34 @@ namespace GUI_QL_TRASUA
             }
 
         }
+
+        private void dataGridView_KhachHang_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (e.RowIndex >= 0)
+            {
+                DataGridViewRow row = dataGridView_KhachHang.Rows[e.RowIndex];
+
+                txt_makh.Text = row.Cells[0].Value.ToString();
+                txt_tenkh.Text = row.Cells[1].Value.ToString();
+                txt_sodt.Text = row.Cells[2].Value.ToString();
+                txt_diachi.Text = row.Cells[3].Value.ToString();
+
+            }
+        }
+
+        private void btn_them_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btn_xoa_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btn_sua_Click_1(object sender, EventArgs e)
+        {
+
+        }
     }
 }

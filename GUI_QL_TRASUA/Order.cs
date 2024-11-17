@@ -51,20 +51,32 @@ namespace GUI_QL_TRASUA
 
         private void SanPhamMoi_Load(object sender, EventArgs e)
         {
+            // khởi tạo lớp bll và các list cần thiết
             List<int> listmakh = new List<int>();
             List<int> listmadh = new List<int>();
             List<SANPHAMDTO> listsanpham = new List<SANPHAMDTO>();
             BLL bll = new BLL();
-           
+
+            cbo_thanhvien.Items.Add("Có");
+            cbo_thanhvien.Items.Add("Không");
+            //cbo_thanhvien.SelectedIndex = 1;
+
+
+            // tạo một khách hàng mới
             KHACHHANGDTO kh = new KHACHHANGDTO
             {
                 TENKH = "null",
                 SODT = "null",
-                DIACHI = "null"
+                DIACHI = "null",
             };
+
+            // thêm khách hàng mới vào db
             bool isSuccesskh = bll.ThemKhachHang(kh);
 
+            // lấy list khách hàng đang có, chuẩn bị lấy khách mới nhất
             listmakh = bll.GetListMaKH_From_KHACHHANG();
+
+            // tìm ra khách hàng mới nhất bằng cách so sánh thứ tự của mã khách (thứ tự max)
             makh_moi = listmakh[0];
             foreach (var item in listmakh)
             {
@@ -74,16 +86,23 @@ namespace GUI_QL_TRASUA
                 }
             }
 
+
+            // tạo một đơn hàng mới, với mã khách là mã của khách mới nhất vừa lấy
             DONHANGDTO dh = new DONHANGDTO
             {
                 MAKH = makh_moi,
                 MANV = manv,
                 NGAYLAP = "",
-                TONGGIA = 0
+                TONGGIA = 0,
             };
+
+            // truyền xuống bll để thêm đơn hàng
             bool isSuccessdh = bll.ThemDonHang(dh);
 
+            // lấy list đơn hàng mới nhất, bao gồm đơn vừa thêm, chuẩn bị cho việc lấy đơn mới nhất
             listmadh = bll.GetListMaDH_From_DONHANG();
+
+            // chạy vòng lặp tìm ra đơn hàng mới nhất trong list lấy được
             madh_moi = listmadh[0];
             foreach (var item in listmadh)
             {
@@ -95,13 +114,25 @@ namespace GUI_QL_TRASUA
 
 
 
-
+            // truyền xuống bll lấy list sản phẩm
             listsanpham = bll.GetListSanPham();
+
+            DataTable khuyenmai_ma_ten = bll.GetAll_Ma_KhuyenMai();
+
+            cbo_khuyenmai.DataSource = khuyenmai_ma_ten;
+            cbo_khuyenmai.DisplayMember = "TENKM";
+            cbo_khuyenmai.ValueMember = "MAKM";
+
+            // truyền list sản phẩm vừa lấy được vào hàm load sản phẩm
             LoadProducts(listsanpham);
         }
 
         private void LoadProducts(List<SANPHAMDTO> listsanpham)
         {
+            // nhận list sản phẩm được truyền vào
+
+            // với từng sản phẩm trong list thì truyền thông tin của sản phẩm đó vào hàm thêm sản phẩm vào menu
+
             foreach (SANPHAMDTO item in listsanpham)
             {
                 AddProductToMenu(item.TENSP, item.GIA, Image.FromFile(item.DUONGDAN), item.MASP);
@@ -113,6 +144,8 @@ namespace GUI_QL_TRASUA
             //AddProductToMenu("Trà Dâu", 44000, Image.FromFile("D:\\cong nghe net nop Copy 2\\DoAnCongNghe.Net\\GUI_QL_TRASUA\\image\\asset 47.jpeg"));
         }
 
+
+        // phương thức load sản phẩm lên menu, nhận tham số là tên, giá, hình ảnh, mã sản phẩm
         private void AddProductToMenu(string name, decimal price, Image image, int masp2)
         {
             // Tạo một Panel chứa các thông tin của sản phẩm
@@ -186,7 +219,7 @@ namespace GUI_QL_TRASUA
                     tongtien1mon += product.o_gia;
                     //tongtienall += product.o_gia;
                     txt_tensp.Text = product.o_tensp;
-                    txt_gia.Text = product.o_gia.ToString("C2");
+                    txt_gia.Text = product.o_gia.ToString();
                     txt_soluong.Text = soluong1.ToString();
                 }
                 else
@@ -240,8 +273,37 @@ namespace GUI_QL_TRASUA
 
         private void btn_thanhtoan_Click(object sender, EventArgs e)
         {
-            string dsmon = "";
             BLL bll = new BLL();
+            int makhuyenmai = int.Parse(cbo_khuyenmai.SelectedValue.ToString());
+            string thanhvien = cbo_thanhvien.SelectedItem.ToString();
+
+            
+            // sửa đơn hàng bằng cách cập nhật mã khuyến mãi của đơn
+            bool isSuccess = bll.SuaDonHang(madh_moi, makhuyenmai);
+            if (isSuccess)
+            {
+                MessageBox.Show("Thành công");
+            }
+            else
+            {
+                MessageBox.Show("Thất bại thêm khuyến mãi vào đơn hàng");
+            }
+
+            // sửa khách hàng bằng cách thêm thành viên
+            bool isSuccess2 = bll.SuaKhachHang(makh_moi, thanhvien);
+            if (isSuccess)
+            {
+                MessageBox.Show("Thành công");
+            }
+            else
+            {
+                MessageBox.Show("Thất bại thêm thành viên cho khách hàng");
+            }
+
+
+
+
+            string dsmon = "";
             foreach (var item in listorder)
             {
                 dsmon += item.o_tensp + " : " + item.o_soluong + "\n";
@@ -252,7 +314,7 @@ namespace GUI_QL_TRASUA
                     SOLUONG = item.o_soluong,
                     GIA = 0
                 };
-                bool isSuccess = bll.ThemChiTietDonHang(ct);
+                bool isSuccess1 = bll.ThemChiTietDonHang(ct);
             }
 
             MessageBox.Show($"Tổng tiền hóa đơn đã ghi nhận là: {tongtienall}\n" + dsmon, "Xác Nhận");

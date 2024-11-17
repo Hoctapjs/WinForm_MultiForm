@@ -187,6 +187,12 @@ namespace DOAN_BLL
             return dal.SuaKhachHang(kh);
         }
 
+        public bool SuaKhachHang(int makh, string thanhvien)
+        {
+            DAL dal = new DAL();
+            return dal.SuaKhachHang(makh, thanhvien);
+        }
+
         // Xóa khách hàng
         public bool XoaKhachHang(int maKH)
         {
@@ -235,6 +241,12 @@ namespace DOAN_BLL
             return dal.SuaDonHang(dh);
         }
 
+        public bool SuaDonHang(int madonhang, int makm)
+        {
+            DAL dal = new DAL();
+            return dal.SuaDonHang(madonhang, makm);
+        }
+
         // Xóa đơn hàng
         public bool XoaDonHang(int maDH)
         {
@@ -276,6 +288,41 @@ namespace DOAN_BLL
             return dal.KiemTraDangNhap(username, password);
         }
 
+        // BẮT ĐẦU KHUYẾN MÃI
+        // Thêm Khuyến mãi
+        public DataTable GetAllKhuyenMai()
+        {
+            DAL dal = new DAL();
+            return dal.GetAllKhuyenMai();
+        }
+
+        public DataTable GetAll_Ma_KhuyenMai()
+        {
+            DAL dal = new DAL();
+            return dal.GetAll_Ma_KhuyenMai();
+        }
+
+        public bool ThemKhuyenMai(KHUYENMAIDTO km)
+        {
+            DAL dal = new DAL();
+            return dal.ThemKhuyenMai(km);
+        }
+
+        // Sửa Khuyến mãi
+        public bool SuaKhuyenMai(KHUYENMAIDTO km)
+        {
+            DAL dal = new DAL();
+            return dal.SuaKhuyenMai(km);
+        }
+
+        // Xóa Khuyến mãi
+        public bool XoaKhuyenMai(int MAKM)
+        {
+            DAL dal = new DAL();
+            return dal.XoaKhuyenMai(MAKM);
+        }
+
+        // TẠM XONG Khuyến mãi
 
 
     }

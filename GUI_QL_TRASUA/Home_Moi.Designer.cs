@@ -38,6 +38,7 @@
             this.menuNhanVienToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuSanPhamToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuThongKeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.menuKhuyenMaiToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.lbl_username = new System.Windows.Forms.Label();
@@ -55,7 +56,8 @@
             this.menuCN_NhanVienToolStripMenuItem1,
             this.menuNhanVienToolStripMenuItem,
             this.menuSanPhamToolStripMenuItem,
-            this.menuThongKeToolStripMenuItem});
+            this.menuThongKeToolStripMenuItem,
+            this.menuKhuyenMaiToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(986, 33);
@@ -64,6 +66,7 @@
             // 
             // menuOrderToolStripMenuItem
             // 
+            this.menuOrderToolStripMenuItem.ForeColor = System.Drawing.Color.DarkBlue;
             this.menuOrderToolStripMenuItem.Name = "menuOrderToolStripMenuItem";
             this.menuOrderToolStripMenuItem.Size = new System.Drawing.Size(75, 29);
             this.menuOrderToolStripMenuItem.Text = "Order";
@@ -141,6 +144,14 @@
             this.menuThongKeToolStripMenuItem.Size = new System.Drawing.Size(106, 29);
             this.menuThongKeToolStripMenuItem.Text = "Thống Kê";
             // 
+            // menuKhuyenMaiToolStripMenuItem
+            // 
+            this.menuKhuyenMaiToolStripMenuItem.ForeColor = System.Drawing.Color.DarkBlue;
+            this.menuKhuyenMaiToolStripMenuItem.Name = "menuKhuyenMaiToolStripMenuItem";
+            this.menuKhuyenMaiToolStripMenuItem.Size = new System.Drawing.Size(126, 29);
+            this.menuKhuyenMaiToolStripMenuItem.Text = "Khuyến Mãi";
+            this.menuKhuyenMaiToolStripMenuItem.Click += new System.EventHandler(this.menuKhuyenMaiToolStripMenuItem_Click);
+            // 
             // panel1
             // 
             this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
@@ -154,15 +165,17 @@
             // 
             // label1
             // 
-            this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Image = global::GUI_QL_TRASUA.Properties.Resources.user_small;
+            this.label1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.label1.Location = new System.Drawing.Point(32, 50);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(115, 28);
+            this.label1.Size = new System.Drawing.Size(136, 28);
             this.label1.TabIndex = 2;
             this.label1.Text = "UserName:";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // lbl_username
             // 
@@ -170,7 +183,7 @@
             this.lbl_username.BackColor = System.Drawing.Color.Transparent;
             this.lbl_username.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.lbl_username.ForeColor = System.Drawing.Color.White;
-            this.lbl_username.Location = new System.Drawing.Point(145, 50);
+            this.lbl_username.Location = new System.Drawing.Point(174, 50);
             this.lbl_username.Name = "lbl_username";
             this.lbl_username.Size = new System.Drawing.Size(137, 28);
             this.lbl_username.TabIndex = 3;
@@ -190,15 +203,17 @@
             // 
             // label4
             // 
-            this.label4.AutoSize = true;
             this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(675, 50);
+            this.label4.Image = global::GUI_QL_TRASUA.Properties.Resources.quyen_small;
+            this.label4.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.label4.Location = new System.Drawing.Point(656, 50);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(78, 28);
+            this.label4.Size = new System.Drawing.Size(97, 28);
             this.label4.TabIndex = 4;
             this.label4.Text = "Quyền:";
+            this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // Home_Moi
             // 
@@ -244,5 +259,6 @@
         private Label lbl_quyen;
         private Label label4;
         private ToolStripMenuItem menuOrderToolStripMenuItem;
+        private ToolStripMenuItem menuKhuyenMaiToolStripMenuItem;
     }
 }

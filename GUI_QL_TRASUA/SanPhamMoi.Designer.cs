@@ -75,8 +75,11 @@
             this.btn_layduongdan.BackColor = System.Drawing.Color.Black;
             this.btn_layduongdan.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btn_layduongdan.ForeColor = System.Drawing.Color.Orange;
+            this.btn_layduongdan.Image = global::GUI_QL_TRASUA.Properties.Resources.photo_small;
+            this.btn_layduongdan.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btn_layduongdan.Location = new System.Drawing.Point(34, 214);
             this.btn_layduongdan.Name = "btn_layduongdan";
+            this.btn_layduongdan.Padding = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.btn_layduongdan.Size = new System.Drawing.Size(183, 38);
             this.btn_layduongdan.TabIndex = 12;
             this.btn_layduongdan.Text = "Chọn ảnh";
@@ -127,8 +130,11 @@
             this.btn_sua.BackColor = System.Drawing.Color.Black;
             this.btn_sua.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btn_sua.ForeColor = System.Drawing.Color.Orange;
+            this.btn_sua.Image = global::GUI_QL_TRASUA.Properties.Resources.update_small;
+            this.btn_sua.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btn_sua.Location = new System.Drawing.Point(34, 385);
             this.btn_sua.Name = "btn_sua";
+            this.btn_sua.Padding = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.btn_sua.Size = new System.Drawing.Size(183, 38);
             this.btn_sua.TabIndex = 8;
             this.btn_sua.Text = "Sửa";
@@ -140,8 +146,11 @@
             this.btn_them.BackColor = System.Drawing.Color.Black;
             this.btn_them.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btn_them.ForeColor = System.Drawing.Color.Orange;
+            this.btn_them.Image = global::GUI_QL_TRASUA.Properties.Resources.add_small;
+            this.btn_them.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btn_them.Location = new System.Drawing.Point(34, 271);
             this.btn_them.Name = "btn_them";
+            this.btn_them.Padding = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.btn_them.Size = new System.Drawing.Size(183, 38);
             this.btn_them.TabIndex = 6;
             this.btn_them.Text = "Thêm";
@@ -153,8 +162,11 @@
             this.btn_xoa.BackColor = System.Drawing.Color.Black;
             this.btn_xoa.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btn_xoa.ForeColor = System.Drawing.Color.Orange;
+            this.btn_xoa.Image = global::GUI_QL_TRASUA.Properties.Resources.remove_small;
+            this.btn_xoa.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btn_xoa.Location = new System.Drawing.Point(34, 328);
             this.btn_xoa.Name = "btn_xoa";
+            this.btn_xoa.Padding = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.btn_xoa.Size = new System.Drawing.Size(183, 38);
             this.btn_xoa.TabIndex = 7;
             this.btn_xoa.Text = "Xóa";

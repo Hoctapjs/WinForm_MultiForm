@@ -69,6 +69,7 @@ namespace GUI_QL_TRASUA
             menuNhanVienToolStripMenuItem.Visible = false;
             menuSanPhamToolStripMenuItem.Visible = false;
             menuThongKeToolStripMenuItem.Visible = false;
+            menuKhuyenMaiToolStripMenuItem.Visible = false;
 
 
             if (quyen == "Admin")
@@ -76,6 +77,7 @@ namespace GUI_QL_TRASUA
                 menuNhanVienToolStripMenuItem.Visible = true;
                 menuSanPhamToolStripMenuItem.Visible = true;
                 menuThongKeToolStripMenuItem.Visible = true;
+                menuKhuyenMaiToolStripMenuItem.Visible = true;
             }
         }
 
@@ -142,6 +144,18 @@ namespace GUI_QL_TRASUA
             panel1.Controls.Clear();
             panel1.Controls.Add(chitietdonhang);
             chitietdonhang.Show();
+        }
+
+        private void menuKhuyenMaiToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            KhuyenMai khuyenmai = new KhuyenMai(username, quyen);
+            khuyenmai.TopLevel = false;
+            khuyenmai.FormBorderStyle = FormBorderStyle.None;
+            khuyenmai.Dock = DockStyle.Fill;
+
+            panel1.Controls.Clear();
+            panel1.Controls.Add(khuyenmai);
+            khuyenmai.Show();
         }
     }
 }
