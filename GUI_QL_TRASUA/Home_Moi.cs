@@ -70,7 +70,15 @@ namespace GUI_QL_TRASUA
             menuSanPhamToolStripMenuItem.Visible = false;
             menuThongKeToolStripMenuItem.Visible = false;
             menuKhuyenMaiToolStripMenuItem.Visible = false;
+            menuOrderToolStripMenuItem.Visible = false;
+            menuCN_NhanVienToolStripMenuItem1.Visible = false;
 
+
+            if (quyen == "Nhân viên")
+            {
+                menuOrderToolStripMenuItem.Visible = true;
+                menuCN_NhanVienToolStripMenuItem1.Visible = true;
+            }
 
             if (quyen == "Admin")
             {

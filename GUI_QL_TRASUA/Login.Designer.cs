@@ -35,8 +35,8 @@
             txt_password = new TextBox();
             btn_dangnhap = new Button();
             pictureBox1 = new PictureBox();
+            btn_dangky = new Button();
             panel1 = new Panel();
-            panel2 = new Panel();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
@@ -103,10 +103,10 @@
             btn_dangnhap.ForeColor = Color.Orange;
             btn_dangnhap.Image = Properties.Resources.profile;
             btn_dangnhap.ImageAlign = ContentAlignment.MiddleLeft;
-            btn_dangnhap.Location = new Point(338, 416);
+            btn_dangnhap.Location = new Point(29, 416);
             btn_dangnhap.Name = "btn_dangnhap";
             btn_dangnhap.Padding = new Padding(20, 0, 20, 0);
-            btn_dangnhap.Size = new Size(271, 82);
+            btn_dangnhap.Size = new Size(264, 82);
             btn_dangnhap.TabIndex = 6;
             btn_dangnhap.Text = "Đăng Nhập";
             btn_dangnhap.TextAlign = ContentAlignment.MiddleRight;
@@ -123,19 +123,29 @@
             pictureBox1.TabIndex = 7;
             pictureBox1.TabStop = false;
             // 
+            // btn_dangky
+            // 
+            btn_dangky.BackColor = Color.Black;
+            btn_dangky.Font = new Font("Segoe UI", 15F, FontStyle.Bold, GraphicsUnit.Point);
+            btn_dangky.ForeColor = Color.Orange;
+            btn_dangky.Image = Properties.Resources.profile;
+            btn_dangky.ImageAlign = ContentAlignment.MiddleLeft;
+            btn_dangky.Location = new Point(419, 416);
+            btn_dangky.Name = "btn_dangky";
+            btn_dangky.Padding = new Padding(20, 0, 20, 0);
+            btn_dangky.Size = new Size(264, 82);
+            btn_dangky.TabIndex = 11;
+            btn_dangky.Text = "Đăng Ký";
+            btn_dangky.TextAlign = ContentAlignment.MiddleRight;
+            btn_dangky.UseVisualStyleBackColor = false;
+            btn_dangky.Click += btn_dangky_Click;
+            // 
             // panel1
             // 
-            panel1.Location = new Point(29, 452);
+            panel1.Location = new Point(326, 454);
             panel1.Name = "panel1";
-            panel1.Size = new Size(293, 7);
-            panel1.TabIndex = 8;
-            // 
-            // panel2
-            // 
-            panel2.Location = new Point(624, 452);
-            panel2.Name = "panel2";
-            panel2.Size = new Size(59, 7);
-            panel2.TabIndex = 9;
+            panel1.Size = new Size(59, 7);
+            panel1.TabIndex = 10;
             // 
             // Login
             // 
@@ -144,7 +154,7 @@
             BackgroundImage = Properties.Resources.Skyline;
             BackgroundImageLayout = ImageLayout.Stretch;
             ClientSize = new Size(724, 530);
-            Controls.Add(panel2);
+            Controls.Add(btn_dangky);
             Controls.Add(panel1);
             Controls.Add(pictureBox1);
             Controls.Add(btn_dangnhap);
@@ -169,7 +179,7 @@
         private TextBox txt_password;
         private Button btn_dangnhap;
         private PictureBox pictureBox1;
+        private Button btn_dangky;
         private Panel panel1;
-        private Panel panel2;
     }
 }

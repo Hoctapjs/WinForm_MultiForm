@@ -54,6 +54,15 @@ namespace GUI_QL_TRASUA
                 txt_username.Focus();
             }
         }
+
+        private void btn_dangky_Click(object sender, EventArgs e)
+        {
+            Login login = this;
+            login.Hide();
+            DangKy dangky = new DangKy();
+            dangky.ShowDialog();
+            login.Close();
+        }
     }
 }
 ;

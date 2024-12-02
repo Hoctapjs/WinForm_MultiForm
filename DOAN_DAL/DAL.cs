@@ -830,6 +830,27 @@ namespace DOAN_DAL
             }
         }
 
-
+        // bắt đầu đăng ký
+        public bool DangKy(string hovaten, string username, string password)
+        {
+            using (SqlConnection conn = new SqlConnection(connectionString))
+            {
+                conn.Open();
+                string query = "INSERT INTO NHANVIEN (TENNV, QUYEN, USERNAME, PASSWORD) VALUES (@TENNV, NULL, @USERNAME, @PASSWORD)";
+                SqlCommand cmd = new SqlCommand(query, conn);
+                cmd.Parameters.AddWithValue("@TENNV", hovaten);
+                cmd.Parameters.AddWithValue("@USERNAME", username);
+                cmd.Parameters.AddWithValue("@PASSWORD", password);
+                try
+                {
+                    return cmd.ExecuteNonQuery() > 0;
+                }
+                catch (Exception)
+                {
+                    return false;
+                    throw;
+                }
+            }
+        }
     }
 }

@@ -324,6 +324,12 @@ namespace DOAN_BLL
 
         // TẠM XONG Khuyến mãi
 
+        // Bắt đầu đăng ký
+        public bool DangKy(string hovaten, string username, string password)
+        {
+            DAL dal = new DAL();
+            return dal.DangKy(hovaten, username, password);
+        }
 
     }
 }

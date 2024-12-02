@@ -3,24 +3,44 @@
   "WorkspaceRootPath": "D:\\cong nghe net nop Copy 2\\DoAnCongNghe.Net\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{B6E30A7D-3D45-44AA-B66B-034E732A37A8}|GUI_QL_TRASUA\\GUI_QL_TRASUA.csproj|D:\\cong nghe net nop Copy 2\\DoAnCongNghe.Net\\gui_ql_trasua\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{B6E30A7D-3D45-44AA-B66B-034E732A37A8}|GUI_QL_TRASUA\\GUI_QL_TRASUA.csproj|solutionrelative:gui_ql_trasua\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B6E30A7D-3D45-44AA-B66B-034E732A37A8}|GUI_QL_TRASUA\\GUI_QL_TRASUA.csproj|D:\\cong nghe net nop Copy 2\\DoAnCongNghe.Net\\gui_ql_trasua\\sanphammoi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{B6E30A7D-3D45-44AA-B66B-034E732A37A8}|GUI_QL_TRASUA\\GUI_QL_TRASUA.csproj|solutionrelative:gui_ql_trasua\\sanphammoi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{B6E30A7D-3D45-44AA-B66B-034E732A37A8}|GUI_QL_TRASUA\\GUI_QL_TRASUA.csproj|D:\\cong nghe net nop Copy 2\\DoAnCongNghe.Net\\gui_ql_trasua\\nhanvien.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{B6E30A7D-3D45-44AA-B66B-034E732A37A8}|GUI_QL_TRASUA\\GUI_QL_TRASUA.csproj|solutionrelative:gui_ql_trasua\\nhanvien.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{B6E30A7D-3D45-44AA-B66B-034E732A37A8}|GUI_QL_TRASUA\\GUI_QL_TRASUA.csproj|d:\\cong nghe net nop copy 2\\doancongnghe.net\\gui_ql_trasua\\home_moi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B6E30A7D-3D45-44AA-B66B-034E732A37A8}|GUI_QL_TRASUA\\GUI_QL_TRASUA.csproj|solutionrelative:gui_ql_trasua\\home_moi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B6E30A7D-3D45-44AA-B66B-034E732A37A8}|GUI_QL_TRASUA\\GUI_QL_TRASUA.csproj|d:\\cong nghe net nop copy 2\\doancongnghe.net\\gui_ql_trasua\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B6E30A7D-3D45-44AA-B66B-034E732A37A8}|GUI_QL_TRASUA\\GUI_QL_TRASUA.csproj|solutionrelative:gui_ql_trasua\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B6E30A7D-3D45-44AA-B66B-034E732A37A8}|GUI_QL_TRASUA\\GUI_QL_TRASUA.csproj|d:\\cong nghe net nop copy 2\\doancongnghe.net\\gui_ql_trasua\\home_moi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{B6E30A7D-3D45-44AA-B66B-034E732A37A8}|GUI_QL_TRASUA\\GUI_QL_TRASUA.csproj|solutionrelative:gui_ql_trasua\\home_moi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{4EB66258-CF2C-4001-B83A-24E7565A68A8}|DOAN_DAL\\DOAN_DAL.csproj|d:\\cong nghe net nop copy 2\\doancongnghe.net\\doan_dal\\dal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4EB66258-CF2C-4001-B83A-24E7565A68A8}|DOAN_DAL\\DOAN_DAL.csproj|solutionrelative:doan_dal\\dal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B6E30A7D-3D45-44AA-B66B-034E732A37A8}|GUI_QL_TRASUA\\GUI_QL_TRASUA.csproj|d:\\cong nghe net nop copy 2\\doancongnghe.net\\gui_ql_trasua\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B6E30A7D-3D45-44AA-B66B-034E732A37A8}|GUI_QL_TRASUA\\GUI_QL_TRASUA.csproj|solutionrelative:gui_ql_trasua\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B6E30A7D-3D45-44AA-B66B-034E732A37A8}|GUI_QL_TRASUA\\GUI_QL_TRASUA.csproj|d:\\cong nghe net nop copy 2\\doancongnghe.net\\gui_ql_trasua\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{B6E30A7D-3D45-44AA-B66B-034E732A37A8}|GUI_QL_TRASUA\\GUI_QL_TRASUA.csproj|solutionrelative:gui_ql_trasua\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B6E30A7D-3D45-44AA-B66B-034E732A37A8}|GUI_QL_TRASUA\\GUI_QL_TRASUA.csproj|d:\\cong nghe net nop copy 2\\doancongnghe.net\\gui_ql_trasua\\dangky.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B6E30A7D-3D45-44AA-B66B-034E732A37A8}|GUI_QL_TRASUA\\GUI_QL_TRASUA.csproj|solutionrelative:gui_ql_trasua\\dangky.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B6E30A7D-3D45-44AA-B66B-034E732A37A8}|GUI_QL_TRASUA\\GUI_QL_TRASUA.csproj|d:\\cong nghe net nop copy 2\\doancongnghe.net\\gui_ql_trasua\\dangky.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{B6E30A7D-3D45-44AA-B66B-034E732A37A8}|GUI_QL_TRASUA\\GUI_QL_TRASUA.csproj|solutionrelative:gui_ql_trasua\\dangky.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CF9C4891-E698-4A33-AF8A-37560B5CFF32}|DOAN_BLL\\DOAN_BLL.csproj|d:\\cong nghe net nop copy 2\\doancongnghe.net\\doan_bll\\bll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CF9C4891-E698-4A33-AF8A-37560B5CFF32}|DOAN_BLL\\DOAN_BLL.csproj|solutionrelative:doan_bll\\bll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B6E30A7D-3D45-44AA-B66B-034E732A37A8}|GUI_QL_TRASUA\\GUI_QL_TRASUA.csproj|D:\\cong nghe net nop Copy 2\\DoAnCongNghe.Net\\gui_ql_trasua\\sanphammoi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{B6E30A7D-3D45-44AA-B66B-034E732A37A8}|GUI_QL_TRASUA\\GUI_QL_TRASUA.csproj|solutionrelative:gui_ql_trasua\\sanphammoi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{B6E30A7D-3D45-44AA-B66B-034E732A37A8}|GUI_QL_TRASUA\\GUI_QL_TRASUA.csproj|D:\\cong nghe net nop Copy 2\\DoAnCongNghe.Net\\gui_ql_trasua\\chitietdonhang.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
@@ -33,10 +53,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{B6E30A7D-3D45-44AA-B66B-034E732A37A8}|GUI_QL_TRASUA\\GUI_QL_TRASUA.csproj|d:\\cong nghe net nop copy 2\\doancongnghe.net\\gui_ql_trasua\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B6E30A7D-3D45-44AA-B66B-034E732A37A8}|GUI_QL_TRASUA\\GUI_QL_TRASUA.csproj|solutionrelative:gui_ql_trasua\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B6E30A7D-3D45-44AA-B66B-034E732A37A8}|GUI_QL_TRASUA\\GUI_QL_TRASUA.csproj|D:\\cong nghe net nop Copy 2\\DoAnCongNghe.Net\\gui_ql_trasua\\home_moi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{B6E30A7D-3D45-44AA-B66B-034E732A37A8}|GUI_QL_TRASUA\\GUI_QL_TRASUA.csproj|solutionrelative:gui_ql_trasua\\home_moi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{B6E30A7D-3D45-44AA-B66B-034E732A37A8}|GUI_QL_TRASUA\\GUI_QL_TRASUA.csproj|d:\\cong nghe net nop copy 2\\doancongnghe.net\\gui_ql_trasua\\sanphammoi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -87,10 +103,6 @@
       "RelativeMoniker": "D:0:0:{B6E30A7D-3D45-44AA-B66B-034E732A37A8}|GUI_QL_TRASUA\\GUI_QL_TRASUA.csproj|solutionrelative:gui_ql_trasua\\chitietdonhang.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CF9C4891-E698-4A33-AF8A-37560B5CFF32}|DOAN_BLL\\DOAN_BLL.csproj|d:\\cong nghe net nop copy 2\\doancongnghe.net\\doan_bll\\bll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CF9C4891-E698-4A33-AF8A-37560B5CFF32}|DOAN_BLL\\DOAN_BLL.csproj|solutionrelative:doan_bll\\bll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{B6E30A7D-3D45-44AA-B66B-034E732A37A8}|GUI_QL_TRASUA\\GUI_QL_TRASUA.csproj|d:\\cong nghe net nop copy 2\\doancongnghe.net\\gui_ql_trasua\\khachhang.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B6E30A7D-3D45-44AA-B66B-034E732A37A8}|GUI_QL_TRASUA\\GUI_QL_TRASUA.csproj|solutionrelative:gui_ql_trasua\\khachhang.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -113,10 +125,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{D3B61A5B-73AF-4657-AE28-EDBD46EB9BF5}|DOAN_DTO\\DOAN_DTO.csproj|d:\\cong nghe net nop copy 2\\doancongnghe.net\\doan_dto\\doan_dto.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
       "RelativeMoniker": "D:0:0:{D3B61A5B-73AF-4657-AE28-EDBD46EB9BF5}|DOAN_DTO\\DOAN_DTO.csproj|solutionrelative:doan_dto\\doan_dto.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B6E30A7D-3D45-44AA-B66B-034E732A37A8}|GUI_QL_TRASUA\\GUI_QL_TRASUA.csproj|D:\\cong nghe net nop Copy 2\\DoAnCongNghe.Net\\gui_ql_trasua\\nhanvien.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{B6E30A7D-3D45-44AA-B66B-034E732A37A8}|GUI_QL_TRASUA\\GUI_QL_TRASUA.csproj|solutionrelative:gui_ql_trasua\\nhanvien.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{B6E30A7D-3D45-44AA-B66B-034E732A37A8}|GUI_QL_TRASUA\\GUI_QL_TRASUA.csproj|d:\\cong nghe net nop copy 2\\doancongnghe.net\\gui_ql_trasua\\nhanvien.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -162,11 +170,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 11,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 33,
+              "DocumentIndex": 35,
               "Title": "Program.cs",
               "DocumentMoniker": "D:\\cong nghe net nop Copy 2\\DoAnCongNghe.Net\\GUI_QL_TRASUA\\Program.cs",
               "RelativeDocumentMoniker": "GUI_QL_TRASUA\\Program.cs",
@@ -179,7 +187,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 9,
               "Title": "SanPhamMoi.cs [Design]",
               "DocumentMoniker": "D:\\cong nghe net nop Copy 2\\DoAnCongNghe.Net\\GUI_QL_TRASUA\\SanPhamMoi.cs",
               "RelativeDocumentMoniker": "GUI_QL_TRASUA\\SanPhamMoi.cs",
@@ -187,12 +195,11 @@
               "RelativeToolTip": "GUI_QL_TRASUA\\SanPhamMoi.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-22T06:53:25.528Z",
-              "IsPinned": true,
-              "EditorCaption": " [Design]"
+              "IsPinned": true
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 13,
               "Title": "SanPhamMoi.cs",
               "DocumentMoniker": "D:\\cong nghe net nop Copy 2\\DoAnCongNghe.Net\\GUI_QL_TRASUA\\SanPhamMoi.cs",
               "RelativeDocumentMoniker": "GUI_QL_TRASUA\\SanPhamMoi.cs",
@@ -205,7 +212,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 12,
               "Title": "Order.cs",
               "DocumentMoniker": "D:\\cong nghe net nop Copy 2\\DoAnCongNghe.Net\\GUI_QL_TRASUA\\Order.cs",
               "RelativeDocumentMoniker": "GUI_QL_TRASUA\\Order.cs",
@@ -219,13 +226,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "Home_Moi.cs",
               "DocumentMoniker": "D:\\cong nghe net nop Copy 2\\DoAnCongNghe.Net\\GUI_QL_TRASUA\\Home_Moi.cs",
               "RelativeDocumentMoniker": "GUI_QL_TRASUA\\Home_Moi.cs",
               "ToolTip": "D:\\cong nghe net nop Copy 2\\DoAnCongNghe.Net\\GUI_QL_TRASUA\\Home_Moi.cs",
               "RelativeToolTip": "GUI_QL_TRASUA\\Home_Moi.cs",
-              "ViewState": "AgIAAHgAAAAAAAAAAAAIwHkAAAAZAAAAAAAAAA==",
+              "ViewState": "AgIAAFoAAAAAAAAAAAAowFkAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-22T03:42:18.106Z",
               "IsPinned": true,
@@ -233,19 +240,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 28,
+              "DocumentIndex": 0,
               "Title": "NhanVien.cs [Design]",
               "DocumentMoniker": "D:\\cong nghe net nop Copy 2\\DoAnCongNghe.Net\\GUI_QL_TRASUA\\NhanVien.cs",
               "RelativeDocumentMoniker": "GUI_QL_TRASUA\\NhanVien.cs",
               "ToolTip": "D:\\cong nghe net nop Copy 2\\DoAnCongNghe.Net\\GUI_QL_TRASUA\\NhanVien.cs [Design]",
               "RelativeToolTip": "GUI_QL_TRASUA\\NhanVien.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003525|",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-13T09:21:15.837Z",
-              "IsPinned": true
+              "IsPinned": true,
+              "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 22,
               "Title": "KhuyenMai.cs [Design]",
               "DocumentMoniker": "D:\\cong nghe net nop Copy 2\\DoAnCongNghe.Net\\GUI_QL_TRASUA\\KhuyenMai.cs",
               "RelativeDocumentMoniker": "GUI_QL_TRASUA\\KhuyenMai.cs",
@@ -257,13 +265,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 3,
               "Title": "DAL.cs",
               "DocumentMoniker": "D:\\cong nghe net nop Copy 2\\DoAnCongNghe.Net\\DOAN_DAL\\DAL.cs",
               "RelativeDocumentMoniker": "DOAN_DAL\\DAL.cs",
               "ToolTip": "D:\\cong nghe net nop Copy 2\\DoAnCongNghe.Net\\DOAN_DAL\\DAL.cs",
               "RelativeToolTip": "DOAN_DAL\\DAL.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAoAAAAAAAAAA==",
+              "ViewState": "AgIAADoDAAAAAAAAAAAswD8DAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-22T03:42:19.275Z",
               "IsPinned": true,
@@ -271,20 +279,21 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 8,
               "Title": "BLL.cs",
               "DocumentMoniker": "D:\\cong nghe net nop Copy 2\\DoAnCongNghe.Net\\DOAN_BLL\\BLL.cs",
               "RelativeDocumentMoniker": "DOAN_BLL\\BLL.cs",
               "ToolTip": "D:\\cong nghe net nop Copy 2\\DoAnCongNghe.Net\\DOAN_BLL\\BLL.cs",
               "RelativeToolTip": "DOAN_BLL\\BLL.cs",
-              "ViewState": "AQIAALUAAAAAAAAAAAAgwMAAAAAhAAAA",
+              "ViewState": "AgIAAD4BAAAAAAAAAAAkwEgBAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-22T03:42:19.281Z",
-              "IsPinned": true
+              "IsPinned": true,
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 23,
               "Title": "KhuyenMai.cs",
               "DocumentMoniker": "D:\\cong nghe net nop Copy 2\\DoAnCongNghe.Net\\GUI_QL_TRASUA\\KhuyenMai.cs",
               "RelativeDocumentMoniker": "GUI_QL_TRASUA\\KhuyenMai.cs",
@@ -297,7 +306,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 20,
               "Title": "DonHang.cs",
               "DocumentMoniker": "D:\\cong nghe net nop Copy 2\\DoAnCongNghe.Net\\GUI_QL_TRASUA\\DonHang.cs",
               "RelativeDocumentMoniker": "GUI_QL_TRASUA\\DonHang.cs",
@@ -311,7 +320,44 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
+              "Title": "Home_Moi.cs [Design]",
+              "DocumentMoniker": "D:\\cong nghe net nop Copy 2\\DoAnCongNghe.Net\\GUI_QL_TRASUA\\Home_Moi.cs",
+              "RelativeDocumentMoniker": "GUI_QL_TRASUA\\Home_Moi.cs",
+              "ToolTip": "D:\\cong nghe net nop Copy 2\\DoAnCongNghe.Net\\GUI_QL_TRASUA\\Home_Moi.cs [Design]",
+              "RelativeToolTip": "GUI_QL_TRASUA\\Home_Moi.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-02T12:59:33.253Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "DangKy.cs",
+              "DocumentMoniker": "D:\\cong nghe net nop Copy 2\\DoAnCongNghe.Net\\GUI_QL_TRASUA\\DangKy.cs",
+              "RelativeDocumentMoniker": "GUI_QL_TRASUA\\DangKy.cs",
+              "ToolTip": "D:\\cong nghe net nop Copy 2\\DoAnCongNghe.Net\\GUI_QL_TRASUA\\DangKy.cs",
+              "RelativeToolTip": "GUI_QL_TRASUA\\DangKy.cs",
+              "ViewState": "AgIAAEwAAAAAAAAAAAAWwFoAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-02T12:28:01.266Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "DangKy.cs [Design]",
+              "DocumentMoniker": "D:\\cong nghe net nop Copy 2\\DoAnCongNghe.Net\\GUI_QL_TRASUA\\DangKy.cs",
+              "RelativeDocumentMoniker": "GUI_QL_TRASUA\\DangKy.cs",
+              "ToolTip": "D:\\cong nghe net nop Copy 2\\DoAnCongNghe.Net\\GUI_QL_TRASUA\\DangKy.cs [Design]",
+              "RelativeToolTip": "GUI_QL_TRASUA\\DangKy.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-02T12:17:09.499Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "Login.cs [Design]",
               "DocumentMoniker": "D:\\cong nghe net nop Copy 2\\DoAnCongNghe.Net\\GUI_QL_TRASUA\\Login.cs",
               "RelativeDocumentMoniker": "GUI_QL_TRASUA\\Login.cs",
@@ -323,18 +369,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "Home_Moi.cs [Design]",
-              "DocumentMoniker": "D:\\cong nghe net nop Copy 2\\DoAnCongNghe.Net\\GUI_QL_TRASUA\\Home_Moi.cs",
-              "RelativeDocumentMoniker": "GUI_QL_TRASUA\\Home_Moi.cs",
-              "ToolTip": "D:\\cong nghe net nop Copy 2\\DoAnCongNghe.Net\\GUI_QL_TRASUA\\Home_Moi.cs [Design]",
-              "RelativeToolTip": "GUI_QL_TRASUA\\Home_Moi.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003525|",
-              "WhenOpened": "2024-11-17T04:13:34.798Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 18,
               "Title": "DonHang.Designer.cs",
               "DocumentMoniker": "D:\\cong nghe net nop Copy 2\\DoAnCongNghe.Net\\GUI_QL_TRASUA\\DonHang.Designer.cs",
               "RelativeDocumentMoniker": "GUI_QL_TRASUA\\DonHang.Designer.cs",
@@ -346,20 +381,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "Login.cs",
               "DocumentMoniker": "D:\\cong nghe net nop Copy 2\\DoAnCongNghe.Net\\GUI_QL_TRASUA\\Login.cs",
               "RelativeDocumentMoniker": "GUI_QL_TRASUA\\Login.cs",
               "ToolTip": "D:\\cong nghe net nop Copy 2\\DoAnCongNghe.Net\\GUI_QL_TRASUA\\Login.cs",
               "RelativeToolTip": "GUI_QL_TRASUA\\Login.cs",
-              "ViewState": "AgIAACEAAAAAAAAAAAAYwCwAAAAoAAAAAAAAAA==",
+              "ViewState": "AgIAACcAAAAAAAAAAAAewDYAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-22T03:42:19.271Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 15,
               "Title": "ChiTietDonHang.Designer.cs",
               "DocumentMoniker": "D:\\cong nghe net nop Copy 2\\DoAnCongNghe.Net\\GUI_QL_TRASUA\\ChiTietDonHang.Designer.cs",
               "RelativeDocumentMoniker": "GUI_QL_TRASUA\\ChiTietDonHang.Designer.cs",
@@ -371,7 +406,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 14,
               "Title": "NhanVien.Designer.cs",
               "DocumentMoniker": "D:\\cong nghe net nop Copy 2\\DoAnCongNghe.Net\\GUI_QL_TRASUA\\NhanVien.Designer.cs",
               "RelativeDocumentMoniker": "GUI_QL_TRASUA\\NhanVien.Designer.cs",
@@ -379,11 +414,12 @@
               "RelativeToolTip": "GUI_QL_TRASUA\\NhanVien.Designer.cs",
               "ViewState": "AQIAAHYAAAAAAAAAAAArwIcAAABQAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-17T04:22:39.933Z"
+              "WhenOpened": "2024-11-17T04:22:39.933Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 10,
               "Title": "ChiTietDonHang.cs [Design]",
               "DocumentMoniker": "D:\\cong nghe net nop Copy 2\\DoAnCongNghe.Net\\GUI_QL_TRASUA\\ChiTietDonHang.cs",
               "RelativeDocumentMoniker": "GUI_QL_TRASUA\\ChiTietDonHang.cs",
@@ -394,7 +430,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 11,
               "Title": "Order.cs [Design]",
               "DocumentMoniker": "D:\\cong nghe net nop Copy 2\\DoAnCongNghe.Net\\GUI_QL_TRASUA\\Order.cs",
               "RelativeDocumentMoniker": "GUI_QL_TRASUA\\Order.cs",
@@ -405,7 +441,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 17,
               "Title": "KhachHang.cs [Design]",
               "DocumentMoniker": "D:\\cong nghe net nop Copy 2\\DoAnCongNghe.Net\\GUI_QL_TRASUA\\KhachHang.cs",
               "RelativeDocumentMoniker": "GUI_QL_TRASUA\\KhachHang.cs",
@@ -416,7 +452,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 16,
               "Title": "DonHang.cs [Design]",
               "DocumentMoniker": "D:\\cong nghe net nop Copy 2\\DoAnCongNghe.Net\\GUI_QL_TRASUA\\DonHang.cs",
               "RelativeDocumentMoniker": "GUI_QL_TRASUA\\DonHang.cs",
@@ -427,7 +463,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 19,
               "Title": "KhachHang.Designer.cs",
               "DocumentMoniker": "D:\\cong nghe net nop Copy 2\\DoAnCongNghe.Net\\GUI_QL_TRASUA\\KhachHang.Designer.cs",
               "RelativeDocumentMoniker": "GUI_QL_TRASUA\\KhachHang.Designer.cs",
@@ -439,7 +475,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 30,
               "Title": "DOAN_DTO.csproj",
               "DocumentMoniker": "D:\\cong nghe net nop Copy 2\\DoAnCongNghe.Net\\DOAN_DTO\\DOAN_DTO.csproj",
               "RelativeDocumentMoniker": "DOAN_DTO\\DOAN_DTO.csproj",
@@ -451,7 +487,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 21,
               "Title": "SanPhamMoi.Designer.cs",
               "DocumentMoniker": "D:\\cong nghe net nop Copy 2\\DoAnCongNghe.Net\\GUI_QL_TRASUA\\SanPhamMoi.Designer.cs",
               "RelativeDocumentMoniker": "GUI_QL_TRASUA\\SanPhamMoi.Designer.cs",
@@ -459,12 +495,11 @@
               "RelativeToolTip": "GUI_QL_TRASUA\\SanPhamMoi.Designer.cs",
               "ViewState": "AQIAAEcAAAAAAAAAAAArwEsAAABOAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-17T04:09:14.869Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-17T04:09:14.869Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 25,
               "Title": "KhachHang.cs",
               "DocumentMoniker": "D:\\cong nghe net nop Copy 2\\DoAnCongNghe.Net\\GUI_QL_TRASUA\\KhachHang.cs",
               "RelativeDocumentMoniker": "GUI_QL_TRASUA\\KhachHang.cs",
@@ -476,7 +511,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 24,
               "Title": "ChiTietDonHang.cs",
               "DocumentMoniker": "D:\\cong nghe net nop Copy 2\\DoAnCongNghe.Net\\GUI_QL_TRASUA\\ChiTietDonHang.cs",
               "RelativeDocumentMoniker": "GUI_QL_TRASUA\\ChiTietDonHang.cs",
@@ -488,7 +523,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 27,
               "Title": "KHACHHANGDTO.cs",
               "DocumentMoniker": "D:\\cong nghe net nop Copy 2\\DoAnCongNghe.Net\\DOAN_DTO\\KHACHHANGDTO.cs",
               "RelativeDocumentMoniker": "DOAN_DTO\\KHACHHANGDTO.cs",
@@ -500,7 +535,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 26,
               "Title": "Order.Designer.cs",
               "DocumentMoniker": "D:\\cong nghe net nop Copy 2\\DoAnCongNghe.Net\\GUI_QL_TRASUA\\Order.Designer.cs",
               "RelativeDocumentMoniker": "GUI_QL_TRASUA\\Order.Designer.cs",
@@ -512,7 +547,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 28,
               "Title": "DONHANGDTO.cs",
               "DocumentMoniker": "D:\\cong nghe net nop Copy 2\\DoAnCongNghe.Net\\DOAN_DTO\\DONHANGDTO.cs",
               "RelativeDocumentMoniker": "DOAN_DTO\\DONHANGDTO.cs",
@@ -524,7 +559,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 29,
               "Title": "KHUYENMAIDTO.cs",
               "DocumentMoniker": "D:\\cong nghe net nop Copy 2\\DoAnCongNghe.Net\\DOAN_DTO\\KHUYENMAIDTO.cs",
               "RelativeDocumentMoniker": "DOAN_DTO\\KHUYENMAIDTO.cs",
@@ -536,7 +571,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 29,
+              "DocumentIndex": 31,
               "Title": "NhanVien.cs",
               "DocumentMoniker": "D:\\cong nghe net nop Copy 2\\DoAnCongNghe.Net\\GUI_QL_TRASUA\\NhanVien.cs",
               "RelativeDocumentMoniker": "GUI_QL_TRASUA\\NhanVien.cs",
@@ -548,7 +583,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 30,
+              "DocumentIndex": 32,
               "Title": "SANPHAMDTO.cs",
               "DocumentMoniker": "D:\\cong nghe net nop Copy 2\\DoAnCongNghe.Net\\DOAN_DTO\\SANPHAMDTO.cs",
               "RelativeDocumentMoniker": "DOAN_DTO\\SANPHAMDTO.cs",
@@ -560,7 +595,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 31,
+              "DocumentIndex": 33,
               "Title": "SanPham.cs",
               "DocumentMoniker": "D:\\cong nghe net nop Copy 2\\DoAnCongNghe.Net\\GUI_QL_TRASUA\\SanPham.cs",
               "RelativeDocumentMoniker": "GUI_QL_TRASUA\\SanPham.cs",
@@ -573,7 +608,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 32,
+              "DocumentIndex": 34,
               "Title": "OrderDTO.cs",
               "DocumentMoniker": "D:\\cong nghe net nop Copy 2\\DoAnCongNghe.Net\\DOAN_DTO\\OrderDTO.cs",
               "RelativeDocumentMoniker": "DOAN_DTO\\OrderDTO.cs",
@@ -585,7 +620,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 34,
+              "DocumentIndex": 36,
               "Title": "Home.cs [Design]",
               "DocumentMoniker": "D:\\cong nghe net nop Copy 2\\DoAnCongNghe.Net\\GUI_QL_TRASUA\\Home.cs",
               "RelativeDocumentMoniker": "GUI_QL_TRASUA\\Home.cs",
@@ -596,7 +631,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 36,
+              "DocumentIndex": 38,
               "Title": "Home.cs",
               "DocumentMoniker": "D:\\cong nghe net nop Copy 2\\DoAnCongNghe.Net\\GUI_QL_TRASUA\\Home.cs",
               "RelativeDocumentMoniker": "GUI_QL_TRASUA\\Home.cs",
@@ -608,7 +643,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 35,
+              "DocumentIndex": 37,
               "Title": "SanPham.cs [Design]",
               "DocumentMoniker": "D:\\cong nghe net nop Copy 2\\DoAnCongNghe.Net\\GUI_QL_TRASUA\\SanPham.cs",
               "RelativeDocumentMoniker": "GUI_QL_TRASUA\\SanPham.cs",
@@ -619,7 +654,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 37,
+              "DocumentIndex": 39,
               "Title": "Home.Designer.cs",
               "DocumentMoniker": "D:\\cong nghe net nop Copy 2\\DoAnCongNghe.Net\\GUI_QL_TRASUA\\Home.Designer.cs",
               "RelativeDocumentMoniker": "GUI_QL_TRASUA\\Home.Designer.cs",
