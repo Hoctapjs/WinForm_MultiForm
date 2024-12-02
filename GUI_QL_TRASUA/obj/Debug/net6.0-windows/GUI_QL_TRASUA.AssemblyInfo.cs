@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("GUI_QL_TRASUA")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+00f2883bb4e435906cda5331eac7b7a5743a061e")]
 [assembly: System.Reflection.AssemblyProductAttribute("GUI_QL_TRASUA")]
 [assembly: System.Reflection.AssemblyTitleAttribute("GUI_QL_TRASUA")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

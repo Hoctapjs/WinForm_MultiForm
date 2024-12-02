@@ -7,7 +7,7 @@ namespace DOAN_DAL
 {
     public class DAL
     {
-        private string connectionString = "Data Source=LAPTOP-2IRIHD28\\SQLSEVER2012;Initial Catalog=QL_TRASUA1;Integrated Security=True";
+        private string connectionString = "Data Source=DESKTOP-D6O7BPB\\SQLEXPRESS;Initial Catalog=QL_TRASUA1;User ID=sa;Password=123;";
 
         // get dataload
         public DataTable GetAllSanPham()

@@ -124,8 +124,14 @@
   <data name="Layer 111" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Layer 111.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="quyen small" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quyen small.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="add small" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\add small.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="latte-art" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\latte-art.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="image-removebg-preview" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\image-removebg-preview.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -157,16 +163,19 @@
   <data name="Layer 11" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Layer 11.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="user small" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\user small.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="photo small" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\photo small.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="user small" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\user small.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="1b97e2198f3b8457c2c7aca9791de98b" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\1b97e2198f3b8457c2c7aca9791de98b.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="remove small" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\remove small.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="quyen small" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\quyen small.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="profile" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\profile.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

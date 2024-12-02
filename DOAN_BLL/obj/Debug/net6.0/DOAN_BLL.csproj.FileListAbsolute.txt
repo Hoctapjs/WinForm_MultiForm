@@ -27,8 +27,9 @@ D:\cong nghe net nop Copy 2\DoAnCongNghe.Net\DOAN_BLL\obj\Debug\net6.0\DOAN_BLL.
 D:\cong nghe net nop Copy 2\DoAnCongNghe.Net\DOAN_BLL\obj\Debug\net6.0\DOAN_BLL.AssemblyInfoInputs.cache
 D:\cong nghe net nop Copy 2\DoAnCongNghe.Net\DOAN_BLL\obj\Debug\net6.0\DOAN_BLL.AssemblyInfo.cs
 D:\cong nghe net nop Copy 2\DoAnCongNghe.Net\DOAN_BLL\obj\Debug\net6.0\DOAN_BLL.csproj.CoreCompileInputs.cache
-D:\cong nghe net nop Copy 2\DoAnCongNghe.Net\DOAN_BLL\obj\Debug\net6.0\DOAN_BLL.csproj.CopyComplete
 D:\cong nghe net nop Copy 2\DoAnCongNghe.Net\DOAN_BLL\obj\Debug\net6.0\DOAN_BLL.dll
 D:\cong nghe net nop Copy 2\DoAnCongNghe.Net\DOAN_BLL\obj\Debug\net6.0\refint\DOAN_BLL.dll
 D:\cong nghe net nop Copy 2\DoAnCongNghe.Net\DOAN_BLL\obj\Debug\net6.0\DOAN_BLL.pdb
 D:\cong nghe net nop Copy 2\DoAnCongNghe.Net\DOAN_BLL\obj\Debug\net6.0\ref\DOAN_BLL.dll
+D:\cong nghe net nop Copy 2\DoAnCongNghe.Net\DOAN_BLL\obj\Debug\net6.0\DOAN_BLL.sourcelink.json
+D:\cong nghe net nop Copy 2\DoAnCongNghe.Net\DOAN_BLL\obj\Debug\net6.0\DOAN_BLL.csproj.Up2Date

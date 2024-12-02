@@ -28,102 +28,137 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.label1 = new System.Windows.Forms.Label();
-            this.txt_username = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.txt_password = new System.Windows.Forms.TextBox();
-            this.btn_dangnhap = new System.Windows.Forms.Button();
-            this.SuspendLayout();
+            label1 = new Label();
+            txt_username = new TextBox();
+            label2 = new Label();
+            label3 = new Label();
+            txt_password = new TextBox();
+            btn_dangnhap = new Button();
+            pictureBox1 = new PictureBox();
+            panel1 = new Panel();
+            panel2 = new Panel();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            SuspendLayout();
             // 
             // label1
             // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Segoe UI", 40.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(159, 21);
-            this.label1.Name = "label1";
-            this.label1.Padding = new System.Windows.Forms.Padding(10);
-            this.label1.Size = new System.Drawing.Size(414, 109);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "Đăng Nhập";
+            label1.AutoSize = true;
+            label1.BackColor = Color.Transparent;
+            label1.Font = new Font("Segoe UI", 45F, FontStyle.Bold, GraphicsUnit.Point);
+            label1.ForeColor = Color.White;
+            label1.Location = new Point(64, 26);
+            label1.Name = "label1";
+            label1.Padding = new Padding(10);
+            label1.Size = new Size(460, 120);
+            label1.TabIndex = 1;
+            label1.Text = "Đăng Nhập";
             // 
             // txt_username
             // 
-            this.txt_username.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.txt_username.ForeColor = System.Drawing.SystemColors.HotTrack;
-            this.txt_username.Location = new System.Drawing.Point(29, 224);
-            this.txt_username.Name = "txt_username";
-            this.txt_username.Size = new System.Drawing.Size(654, 41);
-            this.txt_username.TabIndex = 2;
+            txt_username.Font = new Font("Segoe UI", 15F, FontStyle.Regular, GraphicsUnit.Point);
+            txt_username.ForeColor = SystemColors.HotTrack;
+            txt_username.Location = new Point(29, 224);
+            txt_username.Name = "txt_username";
+            txt_username.Size = new Size(654, 41);
+            txt_username.TabIndex = 2;
             // 
             // label2
             // 
-            this.label2.AutoSize = true;
-            this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(29, 168);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(132, 35);
-            this.label2.TabIndex = 3;
-            this.label2.Text = "Username:";
+            label2.AutoSize = true;
+            label2.BackColor = Color.Transparent;
+            label2.Font = new Font("Segoe UI", 15F, FontStyle.Regular, GraphicsUnit.Point);
+            label2.ForeColor = Color.White;
+            label2.Location = new Point(29, 168);
+            label2.Name = "label2";
+            label2.Size = new Size(132, 35);
+            label2.TabIndex = 3;
+            label2.Text = "Username:";
             // 
             // label3
             // 
-            this.label3.AutoSize = true;
-            this.label3.BackColor = System.Drawing.Color.Transparent;
-            this.label3.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(29, 286);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(125, 35);
-            this.label3.TabIndex = 5;
-            this.label3.Text = "Password:";
+            label3.AutoSize = true;
+            label3.BackColor = Color.Transparent;
+            label3.Font = new Font("Segoe UI", 15F, FontStyle.Regular, GraphicsUnit.Point);
+            label3.ForeColor = Color.White;
+            label3.Location = new Point(29, 286);
+            label3.Name = "label3";
+            label3.Size = new Size(125, 35);
+            label3.TabIndex = 5;
+            label3.Text = "Password:";
             // 
             // txt_password
             // 
-            this.txt_password.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.txt_password.ForeColor = System.Drawing.SystemColors.HotTrack;
-            this.txt_password.Location = new System.Drawing.Point(29, 342);
-            this.txt_password.Name = "txt_password";
-            this.txt_password.PasswordChar = '*';
-            this.txt_password.Size = new System.Drawing.Size(654, 41);
-            this.txt_password.TabIndex = 4;
+            txt_password.Font = new Font("Segoe UI", 15F, FontStyle.Regular, GraphicsUnit.Point);
+            txt_password.ForeColor = SystemColors.HotTrack;
+            txt_password.Location = new Point(29, 342);
+            txt_password.Name = "txt_password";
+            txt_password.PasswordChar = '*';
+            txt_password.Size = new Size(654, 41);
+            txt_password.TabIndex = 4;
             // 
             // btn_dangnhap
             // 
-            this.btn_dangnhap.BackColor = System.Drawing.Color.Black;
-            this.btn_dangnhap.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btn_dangnhap.ForeColor = System.Drawing.Color.Orange;
-            this.btn_dangnhap.Location = new System.Drawing.Point(29, 419);
-            this.btn_dangnhap.Name = "btn_dangnhap";
-            this.btn_dangnhap.Size = new System.Drawing.Size(654, 71);
-            this.btn_dangnhap.TabIndex = 6;
-            this.btn_dangnhap.Text = "Đăng Nhập";
-            this.btn_dangnhap.UseVisualStyleBackColor = false;
-            this.btn_dangnhap.Click += new System.EventHandler(this.button1_Click);
+            btn_dangnhap.BackColor = Color.Black;
+            btn_dangnhap.Font = new Font("Segoe UI", 15F, FontStyle.Bold, GraphicsUnit.Point);
+            btn_dangnhap.ForeColor = Color.Orange;
+            btn_dangnhap.Image = Properties.Resources.profile;
+            btn_dangnhap.ImageAlign = ContentAlignment.MiddleLeft;
+            btn_dangnhap.Location = new Point(338, 416);
+            btn_dangnhap.Name = "btn_dangnhap";
+            btn_dangnhap.Padding = new Padding(20, 0, 20, 0);
+            btn_dangnhap.Size = new Size(271, 82);
+            btn_dangnhap.TabIndex = 6;
+            btn_dangnhap.Text = "Đăng Nhập";
+            btn_dangnhap.TextAlign = ContentAlignment.MiddleRight;
+            btn_dangnhap.UseVisualStyleBackColor = false;
+            btn_dangnhap.Click += button1_Click;
+            // 
+            // pictureBox1
+            // 
+            pictureBox1.BackColor = Color.Transparent;
+            pictureBox1.Image = Properties.Resources.latte_art;
+            pictureBox1.Location = new Point(555, 26);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(128, 128);
+            pictureBox1.TabIndex = 7;
+            pictureBox1.TabStop = false;
+            // 
+            // panel1
+            // 
+            panel1.Location = new Point(29, 452);
+            panel1.Name = "panel1";
+            panel1.Size = new Size(293, 7);
+            panel1.TabIndex = 8;
+            // 
+            // panel2
+            // 
+            panel2.Location = new Point(624, 452);
+            panel2.Name = "panel2";
+            panel2.Size = new Size(59, 7);
+            panel2.TabIndex = 9;
             // 
             // Login
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::GUI_QL_TRASUA.Properties.Resources.Skyline;
-            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(724, 530);
-            this.Controls.Add(this.btn_dangnhap);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.txt_password);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.txt_username);
-            this.Controls.Add(this.label1);
-            this.DoubleBuffered = true;
-            this.Name = "Login";
-            this.Text = "Login";
-            this.ResumeLayout(false);
-            this.PerformLayout();
-
+            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleMode = AutoScaleMode.Font;
+            BackgroundImage = Properties.Resources.Skyline;
+            BackgroundImageLayout = ImageLayout.Stretch;
+            ClientSize = new Size(724, 530);
+            Controls.Add(panel2);
+            Controls.Add(panel1);
+            Controls.Add(pictureBox1);
+            Controls.Add(btn_dangnhap);
+            Controls.Add(label3);
+            Controls.Add(txt_password);
+            Controls.Add(label2);
+            Controls.Add(txt_username);
+            Controls.Add(label1);
+            DoubleBuffered = true;
+            Name = "Login";
+            Text = "Login";
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+            ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
@@ -133,5 +168,8 @@
         private Label label3;
         private TextBox txt_password;
         private Button btn_dangnhap;
+        private PictureBox pictureBox1;
+        private Panel panel1;
+        private Panel panel2;
     }
 }

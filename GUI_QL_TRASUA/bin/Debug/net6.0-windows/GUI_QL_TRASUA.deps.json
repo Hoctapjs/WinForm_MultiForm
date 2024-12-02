@@ -98,7 +98,10 @@
           "System.Data.SqlClient": "4.8.6"
         },
         "runtime": {
-          "DOAN_BLL.dll": {}
+          "DOAN_BLL.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         }
       },
       "DOAN_DAL/1.0.0": {
@@ -107,7 +110,10 @@
           "System.Data.SqlClient": "4.8.6"
         },
         "runtime": {
-          "DOAN_DAL.dll": {}
+          "DOAN_DAL.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         }
       },
       "DOAN_DTO/1.0.0": {
@@ -115,7 +121,10 @@
           "System.Data.SqlClient": "4.8.6"
         },
         "runtime": {
-          "DOAN_DTO.dll": {}
+          "DOAN_DTO.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         }
       }
     }

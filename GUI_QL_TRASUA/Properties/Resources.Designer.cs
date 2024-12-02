@@ -63,6 +63,16 @@ namespace GUI_QL_TRASUA.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _1b97e2198f3b8457c2c7aca9791de98b {
+            get {
+                object obj = ResourceManager.GetObject("1b97e2198f3b8457c2c7aca9791de98b", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap add {
             get {
                 object obj = ResourceManager.GetObject("add", resourceCulture);
@@ -86,6 +96,16 @@ namespace GUI_QL_TRASUA.Properties {
         internal static System.Drawing.Bitmap image_removebg_preview {
             get {
                 object obj = ResourceManager.GetObject("image-removebg-preview", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap latte_art {
+            get {
+                object obj = ResourceManager.GetObject("latte-art", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -146,6 +166,16 @@ namespace GUI_QL_TRASUA.Properties {
         internal static System.Drawing.Bitmap pngwing_com__7_ {
             get {
                 object obj = ResourceManager.GetObject("pngwing.com (7)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap profile {
+            get {
+                object obj = ResourceManager.GetObject("profile", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
