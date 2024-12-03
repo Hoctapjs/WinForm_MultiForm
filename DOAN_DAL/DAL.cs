@@ -597,11 +597,11 @@ namespace DOAN_DAL
             using (SqlConnection conn = new SqlConnection(connectionString))
             {
                 conn.Open();
-                string query = "UPDATE DONHANG SET MAKH = @MAKH, NGAYLAP = @NGAYLAP, TONGGIA = @TONGGIA WHERE MADH = @MADH";
+                string query = "UPDATE DONHANG SET MAKH = @MAKH, NGAYLAP = GETDATE(), TONGGIA = @TONGGIA, MAKM = @MAKM WHERE MADH = @MADH";
                 SqlCommand cmd = new SqlCommand(query, conn);
                 cmd.Parameters.AddWithValue("@MADH", dh.MADH);
                 cmd.Parameters.AddWithValue("@MAKH", dh.MAKH);
-                cmd.Parameters.AddWithValue("@NGAYLAP", dh.NGAYLAP);
+                cmd.Parameters.AddWithValue("@MAKM", dh.MAKM);
                 cmd.Parameters.AddWithValue("@TONGGIA", dh.TONGGIA);
 
                 return cmd.ExecuteNonQuery() > 0;

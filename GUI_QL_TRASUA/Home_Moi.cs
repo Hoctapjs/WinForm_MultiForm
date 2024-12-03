@@ -82,6 +82,8 @@ namespace GUI_QL_TRASUA
 
             if (quyen == "Admin")
             {
+                menuOrderToolStripMenuItem.Visible = true;
+                menuCN_NhanVienToolStripMenuItem1.Visible = true;
                 menuNhanVienToolStripMenuItem.Visible = true;
                 menuSanPhamToolStripMenuItem.Visible = true;
                 menuThongKeToolStripMenuItem.Visible = true;
@@ -132,7 +134,7 @@ namespace GUI_QL_TRASUA
 
         private void menuXemHoaDonToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            DonHang donhang = new DonHang(username, quyen);
+            DonHang donhang = new DonHang(username, quyen, manv);
             donhang.TopLevel = false;
             donhang.FormBorderStyle = FormBorderStyle.None;
             donhang.Dock = DockStyle.Fill;

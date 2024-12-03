@@ -15,17 +15,19 @@ namespace GUI_QL_TRASUA
 {
     public partial class DonHang : Form
     {
-        public DonHang(string username1, string quyen1)
+        public DonHang(string username1, string quyen1, int manv1)
         {
             InitializeComponent();
             username = username1;
             quyen = quyen1;
+            manv = manv1;
             LoadDonHang();
         }
 
         string username;
         string quyen;
         int makh;
+        int manv;
 
         private void LoadDonHang()
         {
@@ -55,14 +57,15 @@ namespace GUI_QL_TRASUA
         private void btn_them_Click(object sender, EventArgs e)
         {
             BLL bll = new BLL();
-            bool isSuccess = bll.ThemKhachHang();
+            //bool isSuccess = bll.ThemKhachHang();
             txt_makh.Text = bll.GetKhachHangMoiNhat().ToString();
             makh = bll.GetKhachHangMoiNhat();
             DONHANGDTO dh = new DONHANGDTO
             {
                 MAKH = makh,
                 NGAYLAP = (txt_ngaylap.Text),
-                TONGGIA = 0
+                TONGGIA = 0,
+                MANV = manv
             };
             bool isSuccess1 = bll.ThemDonHang(dh);
             if (isSuccess1)
@@ -102,6 +105,7 @@ namespace GUI_QL_TRASUA
             {
                 MADH = Convert.ToInt32(txt_madh.Text),
                 MAKH = Convert.ToInt32(cbo_makh.SelectedValue.ToString()),
+                MAKM = Convert.ToInt32(cbo_makhuyenmai.SelectedValue.ToString()),
                 NGAYLAP = (txt_ngaylap.Text),
                 TONGGIA = 0
             };

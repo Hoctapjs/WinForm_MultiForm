@@ -22,3 +22,4 @@ D:\cong nghe net nop Copy 2\DoAnCongNghe.Net\DOAN_DTO\obj\Debug\net6.0\DOAN_DTO.
 D:\cong nghe net nop Copy 2\DoAnCongNghe.Net\DOAN_DTO\obj\Debug\net6.0\refint\DOAN_DTO.dll
 D:\cong nghe net nop Copy 2\DoAnCongNghe.Net\DOAN_DTO\obj\Debug\net6.0\DOAN_DTO.pdb
 D:\cong nghe net nop Copy 2\DoAnCongNghe.Net\DOAN_DTO\obj\Debug\net6.0\ref\DOAN_DTO.dll
+D:\cong nghe net nop Copy 2\DoAnCongNghe.Net\DOAN_DTO\obj\Debug\net6.0\DOAN_DTO.sourcelink.json

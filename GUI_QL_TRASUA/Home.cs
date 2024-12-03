@@ -105,7 +105,7 @@ namespace GUI_QL_TRASUA
         {
             Home home = this;
             home.Hide();
-            DonHang dh = new DonHang(username, quyen);
+            DonHang dh = new DonHang(username, quyen, 0);
             dh.ShowDialog();
             home.Close();
         }
