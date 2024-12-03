@@ -331,5 +331,31 @@ namespace DOAN_BLL
             return dal.DangKy(hovaten, username, password);
         }
 
+        // bắt đầu biểu đồ
+        public DataTable SoLuongDonHangTheoNhanVien()
+        {
+            DAL dal = new DAL();
+            return dal.SoLuongDonHangTheoNhanVien();
+        }
+
+        public DataTable TongDoanhThuTheoNhanVien()
+        {
+            DAL dal = new DAL();
+            return dal.TongDoanhThuTheoNhanVien();
+        }
+
+        public DataTable SoLuongSanPhamBanDuoc()
+        {
+            DAL dal = new DAL();
+            return dal.SoLuongSanPhamBanDuoc();
+        }
+
+        // biểu đồ 4
+        public DataTable TopSanPhamBanChay()
+        {
+            DAL dal = new DAL();
+            return dal.TopSanPhamBanChay();
+        }
+
     }
 }

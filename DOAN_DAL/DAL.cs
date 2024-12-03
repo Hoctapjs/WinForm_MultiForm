@@ -852,5 +852,62 @@ namespace DOAN_DAL
                 }
             }
         }
+
+        // biểu đồ 1 số lượng đơn theo nhân viên
+        public DataTable SoLuongDonHangTheoNhanVien()
+        {
+            using (SqlConnection conn = new SqlConnection(connectionString))
+            {
+                conn.Open();
+                string query = "SELECT NV.TENNV, COUNT(DH.MANV) AS SoLuongDonHang FROM DONHANG DH JOIN NHANVIEN NV ON DH.MANV = NV.MANV GROUP BY NV.TENNV;";
+                SqlDataAdapter adapter = new SqlDataAdapter(query, conn);
+                DataTable dataTable = new DataTable();
+                adapter.Fill(dataTable);
+                return dataTable;
+            }
+        }
+
+        // biểu đồ 2
+        public DataTable TongDoanhThuTheoNhanVien()
+        {
+            using (SqlConnection conn = new SqlConnection(connectionString))
+            {
+                conn.Open();
+                string query = "SELECT NV.TENNV, SUM(DH.TONGGIA) AS TongDoanhThu FROM DONHANG DH JOIN NHANVIEN NV ON DH.MANV = NV.MANV GROUP BY NV.TENNV;";
+                SqlDataAdapter adapter = new SqlDataAdapter(query, conn);
+                DataTable dataTable = new DataTable();
+                adapter.Fill(dataTable);
+                return dataTable;
+            }
+        }
+
+        // biểu đồ 3
+        public DataTable SoLuongSanPhamBanDuoc()
+        {
+            using (SqlConnection conn = new SqlConnection(connectionString))
+            {
+                conn.Open();
+                string query = "SELECT MASP, SUM(SOLUONG) AS TongSoLuong FROM CHITIETDONHANG GROUP BY MASP;";
+                SqlDataAdapter adapter = new SqlDataAdapter(query, conn);
+                DataTable dataTable = new DataTable();
+                adapter.Fill(dataTable);
+                return dataTable;
+            }
+        }
+
+        // biểu đồ 4
+        public DataTable TopSanPhamBanChay()
+        {
+            using (SqlConnection conn = new SqlConnection(connectionString))
+            {
+                conn.Open();
+                string query = "SELECT TOP 10 MASP, SUM(SOLUONG) AS TongSoLuong FROM CHITIETDONHANG GROUP BY MASP ORDER BY TongSoLuong DESC;";
+                SqlDataAdapter adapter = new SqlDataAdapter(query, conn);
+                DataTable dataTable = new DataTable();
+                adapter.Fill(dataTable);
+                return dataTable;
+            }
+        }
+
     }
 }

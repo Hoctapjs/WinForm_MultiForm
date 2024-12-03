@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("DOAN_DAL")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+aef86dff4f063da63e08e74471274b13a4fb454b")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e9d85129b8839f5eedfb224da176c0d5f1fde5de")]
 [assembly: System.Reflection.AssemblyProductAttribute("DOAN_DAL")]
 [assembly: System.Reflection.AssemblyTitleAttribute("DOAN_DAL")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

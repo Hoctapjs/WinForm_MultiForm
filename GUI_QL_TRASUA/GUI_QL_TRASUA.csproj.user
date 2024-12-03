@@ -4,6 +4,9 @@
     <Compile Update="Chart.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="Chart_SoLuongDonTheoNhanVien.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="ChiTietDonHang.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -38,6 +41,9 @@
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="SanPhamMoi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="ThongKe.cs">
       <SubType>Form</SubType>
     </Compile>
   </ItemGroup>

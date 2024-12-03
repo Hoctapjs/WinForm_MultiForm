@@ -108,7 +108,7 @@ namespace GUI_QL_TRASUA
             HienThiFormOrder();
         }
 
-        public void HienThiFormOrder ()
+        public void HienThiFormOrder()
         {
             Order order = new Order(manv, username, quyen);
             order.TopLevel = false;
@@ -166,6 +166,18 @@ namespace GUI_QL_TRASUA
             panel1.Controls.Clear();
             panel1.Controls.Add(khuyenmai);
             khuyenmai.Show();
+        }
+
+        private void menuThongKeToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ThongKe thongke = new ThongKe();
+            thongke.TopLevel = false;
+            thongke.FormBorderStyle = FormBorderStyle.None;
+            thongke.Dock = DockStyle.Fill;
+
+            panel1.Controls.Clear();
+            panel1.Controls.Add(thongke);
+            thongke.Show();
         }
     }
 }
