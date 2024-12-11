@@ -37,7 +37,14 @@ namespace GUI_QL_TRASUA
         {
             foreach (SANPHAMDTO item in listsanpham)
             {
-                AddProductToMenu(item.MASP, item.TENSP, item.GIA, Image.FromFile(item.DUONGDAN), item.DUONGDAN, item.KICHTHUOC);
+                if (string.IsNullOrEmpty(item.DUONGDAN))
+                {
+
+                }
+                else
+                {
+                    AddProductToMenu(item.MASP, item.TENSP, item.GIA, Image.FromFile(item.DUONGDAN), item.DUONGDAN, item.KICHTHUOC);
+                }
 
             }
 
@@ -146,28 +153,48 @@ namespace GUI_QL_TRASUA
 
         private void btn_them_Click(object sender, EventArgs e)
         {
-            BLL bll = new BLL();
-            SANPHAMDTO sp = new SANPHAMDTO
+            try
             {
-                TENSP = txt_tensp.Text,
-                GIA = Convert.ToDecimal(txt_gia.Text),
-                KICHTHUOC = cbo_kichthuoc.SelectedItem.ToString(),
-                DUONGDAN = duongdan1
-            };
-            bool isSuccess = bll.ThemSanPham(sp);
-            if (isSuccess)
-            {
-                MessageBox.Show("Thành công");
-                flowLayoutPanel1.Controls.Clear();
-                List<SANPHAMDTO> listsanpham1 = new List<SANPHAMDTO>();
-                BLL bll1 = new BLL();
-                listsanpham1 = bll1.GetListSanPham();
-                LoadProducts(listsanpham1);
+                decimal gia = Convert.ToDecimal(txt_gia.Text);
+                if (gia <= 0)
+                {
+                    MessageBox.Show("Giá không thể bé hơn hoặc bằng 0");
+                    txt_gia.Clear();
+                    txt_gia.Focus();
+                    return;
+                }
+
+                BLL bll = new BLL();
+                SANPHAMDTO sp = new SANPHAMDTO
+                {
+                    TENSP = txt_tensp.Text,
+                    GIA = Convert.ToDecimal(txt_gia.Text),
+                    KICHTHUOC = cbo_kichthuoc.SelectedItem.ToString(),
+                    DUONGDAN = duongdan1
+                };
+                bool isSuccess = bll.ThemSanPham(sp);
+                if (isSuccess)
+                {
+                    MessageBox.Show("Thành công");
+                    flowLayoutPanel1.Controls.Clear();
+                    List<SANPHAMDTO> listsanpham1 = new List<SANPHAMDTO>();
+                    BLL bll1 = new BLL();
+                    listsanpham1 = bll1.GetListSanPham();
+                    LoadProducts(listsanpham1);
+                }
+                else
+                {
+                    MessageBox.Show("Thất bại");
+                }
             }
-            else
+            catch (Exception)
             {
-                MessageBox.Show("Thất bại");
+                MessageBox.Show("Có Thông tin đã nhập sai");
+                return;
             }
+
+
+            
         }
 
         private void btn_xoa_Click(object sender, EventArgs e)
@@ -193,29 +220,46 @@ namespace GUI_QL_TRASUA
 
         private void btn_sua_Click(object sender, EventArgs e)
         {
-            BLL bll = new BLL();
-            SANPHAMDTO sp = new SANPHAMDTO
+            try
             {
-                MASP = Convert.ToInt32(txt_masp.Text),
-                TENSP = txt_tensp.Text,
-                GIA = Convert.ToDecimal(txt_gia.Text),
-                KICHTHUOC = cbo_kichthuoc.SelectedItem.ToString(),
-                DUONGDAN = duongdan1
-            };
-            bool isSuccess = bll.SuaSanPham(sp);
-            if (isSuccess)
-            {
-                MessageBox.Show("Thành công");
-                flowLayoutPanel1.Controls.Clear();
-                List<SANPHAMDTO> listsanpham1 = new List<SANPHAMDTO>();
-                BLL bll1 = new BLL();
-                listsanpham1 = bll1.GetListSanPham();
-                LoadProducts(listsanpham1);
+                string masp_s = txt_masp.Text;
+                bool isNumeric = masp_s.All(char.IsDigit);
+                if (isNumeric)
+                {
+                    BLL bll = new BLL();
+                    SANPHAMDTO sp = new SANPHAMDTO
+                    {
+                        MASP = Convert.ToInt32(txt_masp.Text),
+                        TENSP = txt_tensp.Text,
+                        GIA = Convert.ToDecimal(txt_gia.Text),
+                        KICHTHUOC = cbo_kichthuoc.SelectedItem.ToString(),
+                        DUONGDAN = duongdan1
+                    };
+                    bool isSuccess = bll.SuaSanPham(sp);
+                    if (isSuccess)
+                    {
+                        MessageBox.Show("Thành công");
+                        flowLayoutPanel1.Controls.Clear();
+                        List<SANPHAMDTO> listsanpham1 = new List<SANPHAMDTO>();
+                        BLL bll1 = new BLL();
+                        listsanpham1 = bll1.GetListSanPham();
+                        LoadProducts(listsanpham1);
 
+                    }
+                    else
+                    {
+                        MessageBox.Show("Thất bại");
+                    }
+                }
+                else
+                {
+                    MessageBox.Show("Mã Sản Phẩm phải là số");
+                }
             }
-            else
+            catch (Exception)
             {
-                MessageBox.Show("Thất bại");
+                MessageBox.Show("Có Thông Tin Nhập Sai");
+                return;
             }
         }
     }

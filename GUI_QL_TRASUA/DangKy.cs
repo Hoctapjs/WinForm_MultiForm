@@ -27,6 +27,38 @@ namespace GUI_QL_TRASUA
             string re_password = txt_repassword.Text;
             string tennhanvien = txt_tennhanvien.Text;
 
+            if (username.Length > 30)
+            {
+                MessageBox.Show("Đã nhập quá 30 ký tự, Xin hãy nhập lại");
+                txt_username.Clear();
+                txt_username.Focus();
+                return;
+            }
+
+            if (password.Length > 30)
+            {
+                MessageBox.Show("Đã nhập quá 30 ký tự, Xin hãy nhập lại");
+                txt_username.Clear();
+                txt_username.Focus();
+                return;
+            }
+
+            if (re_password.Length > 30)
+            {
+                MessageBox.Show("Đã nhập quá 30 ký tự, Xin hãy nhập lại");
+                txt_username.Clear();
+                txt_username.Focus();
+                return;
+            }
+
+            if (tennhanvien.Length > 50)
+            {
+                MessageBox.Show("Đã nhập quá 50 ký tự cho tên nhân viên, Xin hãy nhập lại");
+                txt_username.Clear();
+                txt_username.Focus();
+                return;
+            }
+
             if (string.IsNullOrEmpty(username))
             {
                 MessageBox.Show("Username không được để trống", "Lưu ý");

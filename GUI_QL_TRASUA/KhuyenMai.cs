@@ -61,50 +61,68 @@ namespace GUI_QL_TRASUA
         private void btn_them_Click(object sender, EventArgs e)
         {
             BLL bll = new BLL();
+            string makm = txt_makm.Text;
+            string heso = txt_heso.Text;
 
-            if (string.IsNullOrEmpty(txt_ngaybd.Text) || string.IsNullOrEmpty(txt_ngaykt.Text))
+            bool isNumeric_makm = makm.All(char.IsDigit);
+            bool isNumeric_heso = heso.All(char.IsDigit);
+
+            try
             {
-                KHUYENMAIDTO km = new KHUYENMAIDTO
+                if (isNumeric_makm == true && isNumeric_heso == true)
                 {
-                    Tenkm = txt_tenkm.Text,
-                    Hesokm = float.Parse(txt_heso.Text)
-                };
+                    if (string.IsNullOrEmpty(txt_ngaybd.Text) || string.IsNullOrEmpty(txt_ngaykt.Text))
+                    {
+                        KHUYENMAIDTO km = new KHUYENMAIDTO
+                        {
+                            Tenkm = txt_tenkm.Text,
+                            Hesokm = float.Parse(txt_heso.Text)
+                        };
 
-                bool isSuccess = bll.ThemKhuyenMai(km);
-                if (isSuccess)
-                {
-                    MessageBox.Show("Thành công");
-                    LoadKhuyenMai();
+                        bool isSuccess = bll.ThemKhuyenMai(km);
+                        if (isSuccess)
+                        {
+                            MessageBox.Show("Thành công");
+                            LoadKhuyenMai();
+                        }
+                        else
+                        {
+                            MessageBox.Show("Thất bại");
+                        }
+                    }
+                    else
+                    {
+                        KHUYENMAIDTO km = new KHUYENMAIDTO
+                        {
+                            Tenkm = txt_tenkm.Text,
+                            Ngaybd = DateTime.Parse(txt_ngaybd.Text),
+                            Ngaykt = DateTime.Parse(txt_ngaykt.Text),
+                            Hesokm = float.Parse(txt_heso.Text)
+                        };
+
+                        bool isSuccess = bll.ThemKhuyenMai(km);
+                        if (isSuccess)
+                        {
+                            MessageBox.Show("Thành công");
+                            LoadKhuyenMai();
+                        }
+                        else
+                        {
+                            MessageBox.Show("Thất bại");
+                        }
+                    }
                 }
                 else
                 {
-                    MessageBox.Show("Thất bại");
+                    MessageBox.Show("Thông tin nhận vào còn chưa đúng");
+                    return;
                 }
             }
-            else
+            catch (Exception)
             {
-                KHUYENMAIDTO km = new KHUYENMAIDTO
-                {
-                    Tenkm = txt_tenkm.Text,
-                    Ngaybd = DateTime.Parse(txt_ngaybd.Text),
-                    Ngaykt = DateTime.Parse(txt_ngaykt.Text),
-                    Hesokm = float.Parse(txt_heso.Text)
-                };
-
-                bool isSuccess = bll.ThemKhuyenMai(km);
-                if (isSuccess)
-                {
-                    MessageBox.Show("Thành công");
-                    LoadKhuyenMai();
-                }
-                else
-                {
-                    MessageBox.Show("Thất bại");
-                }
+                MessageBox.Show("Không Thành Công");
+                return;
             }
-
-            
-            
         }
 
         private void btn_xoa_Click(object sender, EventArgs e)
@@ -126,24 +144,32 @@ namespace GUI_QL_TRASUA
 
         private void btn_sua_Click(object sender, EventArgs e)
         {
-            BLL bll = new BLL();
-            KHUYENMAIDTO km = new KHUYENMAIDTO
+            try
             {
-                Makm = int.Parse(txt_makm.Text),
-                Tenkm = txt_tenkm.Text,
-                Ngaybd = DateTime.Parse(txt_ngaybd.Text),
-                Ngaykt = DateTime.Parse(txt_ngaykt.Text),
-                Hesokm = float.Parse(txt_heso.Text)
-            };
-            bool isSuccess = bll.SuaKhuyenMai(km);
-            if (isSuccess)
-            {
-                MessageBox.Show("Thành công");
-                LoadKhuyenMai();
+                BLL bll = new BLL();
+                KHUYENMAIDTO km = new KHUYENMAIDTO
+                {
+                    Makm = int.Parse(txt_makm.Text),
+                    Tenkm = txt_tenkm.Text,
+                    Ngaybd = DateTime.Parse(txt_ngaybd.Text),
+                    Ngaykt = DateTime.Parse(txt_ngaykt.Text),
+                    Hesokm = float.Parse(txt_heso.Text)
+                };
+                bool isSuccess = bll.SuaKhuyenMai(km);
+                if (isSuccess)
+                {
+                    MessageBox.Show("Thành công");
+                    LoadKhuyenMai();
+                }
+                else
+                {
+                    MessageBox.Show("Thất bại");
+                }
             }
-            else
+            catch (Exception)
             {
-                MessageBox.Show("Thất bại");
+                MessageBox.Show("Không Thành Công");
+                return;
             }
         }
 

@@ -9,6 +9,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace GUI_QL_TRASUA
 {
@@ -275,49 +276,69 @@ namespace GUI_QL_TRASUA
         {
             BLL bll = new BLL();
             int makhuyenmai = int.Parse(cbo_khuyenmai.SelectedValue.ToString());
-            string thanhvien = cbo_thanhvien.SelectedItem.ToString();
+
+            try
+            {
+                cbo_thanhvien.SelectedIndex = 1;
+                if (string.IsNullOrEmpty(cbo_thanhvien.SelectedItem.ToString()))
+                {
+                    MessageBox.Show("Chưa chọn thành viên hay không");
+                    return;
+                }
+
+                string thanhvien = cbo_thanhvien.SelectedItem.ToString();
+
+
+
+
+                // sửa đơn hàng bằng cách cập nhật mã khuyến mãi của đơn
+                bool isSuccess = bll.SuaDonHang(madh_moi, makhuyenmai);
+                if (isSuccess)
+                {
+                    MessageBox.Show("Thành công");
+                }
+                else
+                {
+                    MessageBox.Show("Thất bại thêm khuyến mãi vào đơn hàng");
+                }
+
+                // sửa khách hàng bằng cách thêm thành viên
+                bool isSuccess2 = bll.SuaKhachHang(makh_moi, thanhvien);
+                if (isSuccess)
+                {
+                    MessageBox.Show("Thành công");
+                }
+                else
+                {
+                    MessageBox.Show("Thất bại thêm thành viên cho khách hàng");
+                }
+
+
+
+
+                string dsmon = "";
+                foreach (var item in listorder)
+                {
+                    dsmon += item.o_tensp + " : " + item.o_soluong + "\n";
+                    CHITIETDONHANGDTO ct = new CHITIETDONHANGDTO
+                    {
+                        MADH = madh_moi,
+                        MASP = item.o_masp,
+                        SOLUONG = item.o_soluong,
+                        GIA = 0
+                    };
+                    bool isSuccess1 = bll.ThemChiTietDonHang(ct);
+                }
+
+                MessageBox.Show($"Tổng tiền hóa đơn đã ghi nhận là: {tongtienall}\n" + dsmon, "Xác Nhận");
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("Có thông tin còn chưa chọn");
+                return;
+            }
 
             
-            // sửa đơn hàng bằng cách cập nhật mã khuyến mãi của đơn
-            bool isSuccess = bll.SuaDonHang(madh_moi, makhuyenmai);
-            if (isSuccess)
-            {
-                MessageBox.Show("Thành công");
-            }
-            else
-            {
-                MessageBox.Show("Thất bại thêm khuyến mãi vào đơn hàng");
-            }
-
-            // sửa khách hàng bằng cách thêm thành viên
-            bool isSuccess2 = bll.SuaKhachHang(makh_moi, thanhvien);
-            if (isSuccess)
-            {
-                MessageBox.Show("Thành công");
-            }
-            else
-            {
-                MessageBox.Show("Thất bại thêm thành viên cho khách hàng");
-            }
-
-
-
-
-            string dsmon = "";
-            foreach (var item in listorder)
-            {
-                dsmon += item.o_tensp + " : " + item.o_soluong + "\n";
-                CHITIETDONHANGDTO ct = new CHITIETDONHANGDTO
-                {
-                    MADH = madh_moi,
-                    MASP = item.o_masp,
-                    SOLUONG = item.o_soluong,
-                    GIA = 0
-                };
-                bool isSuccess1 = bll.ThemChiTietDonHang(ct);
-            }
-
-            MessageBox.Show($"Tổng tiền hóa đơn đã ghi nhận là: {tongtienall}\n" + dsmon, "Xác Nhận");
             // khi khởi động form order thì sẽ tạo mới 1 khách, lưu trữ mã khách, lấy mã khách đó tạo mới 1 đơn
             // lưu trữ mã khách, mã đơn để chuẩn bị tạo chi tiết đơn hàng từ listorder
             // có 2 chức năng là làm mới đơn (đã làm) và xóa đơn

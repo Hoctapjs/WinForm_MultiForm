@@ -2,6 +2,7 @@
 using System.Data.SqlClient;
 using DOAN_DTO;
 using System.IO;
+using System.Collections.Generic;
 
 namespace DOAN_DAL
 {
@@ -92,7 +93,7 @@ namespace DOAN_DAL
             using (SqlConnection conn = new SqlConnection(connectionString))
             {
                 conn.Open();
-                string query = "SELECT * FROM CHITIETDONHANG";
+                string query = "SELECT CHITIETDONHANG.*, TENSP FROM CHITIETDONHANG JOIN SANPHAM ON CHITIETDONHANG.MASP = SANPHAM.MASP ";
                 SqlDataAdapter adapter = new SqlDataAdapter(query, conn);
                 DataTable dataTable = new DataTable();
                 adapter.Fill(dataTable);
@@ -648,18 +649,26 @@ namespace DOAN_DAL
         // Thêm chi tiết đơn hàng
         public bool ThemChiTietDonHang(CHITIETDONHANGDTO ct)
         {
-            using (SqlConnection conn = new SqlConnection(connectionString))
+            try
             {
-                conn.Open();
-                string query = "INSERT INTO CHITIETDONHANG (MADH, MASP, SOLUONG, GIA) VALUES (@MADH, @MASP, @SOLUONG, @GIA)";
-                SqlCommand cmd = new SqlCommand(query, conn);
-                cmd.Parameters.AddWithValue("@MADH", ct.MADH);
-                cmd.Parameters.AddWithValue("@MASP", ct.MASP);
-                cmd.Parameters.AddWithValue("@SOLUONG", ct.SOLUONG);
-                cmd.Parameters.AddWithValue("@GIA", ct.GIA);
+                using (SqlConnection conn = new SqlConnection(connectionString))
+                {
+                    conn.Open();
+                    string query = "INSERT INTO CHITIETDONHANG (MADH, MASP, SOLUONG, GIA) VALUES (@MADH, @MASP, @SOLUONG, @GIA)";
+                    SqlCommand cmd = new SqlCommand(query, conn);
+                    cmd.Parameters.AddWithValue("@MADH", ct.MADH);
+                    cmd.Parameters.AddWithValue("@MASP", ct.MASP);
+                    cmd.Parameters.AddWithValue("@SOLUONG", ct.SOLUONG);
+                    cmd.Parameters.AddWithValue("@GIA", ct.GIA);
 
-                return cmd.ExecuteNonQuery() > 0;
+                    return cmd.ExecuteNonQuery() > 0;
+                }
             }
+            catch (Exception)
+            {
+                return false;
+            }
+            
         }
 
         // Sửa chi tiết đơn hàng
@@ -726,6 +735,41 @@ namespace DOAN_DAL
             }
             return nhanVien;
         }
+
+        public bool DoiMatKhau(string username, string password_new)
+        {
+            using (SqlConnection conn = new SqlConnection(connectionString))
+            {
+                conn.Open();
+                string query = "UPDATE NHANVIEN SET PASSWORD = @PASSWORD WHERE USERNAME = @USERNAME";
+                SqlCommand cmd = new SqlCommand(query, conn);
+                cmd.Parameters.AddWithValue("@USERNAME", username);
+                cmd.Parameters.AddWithValue("@PASSWORD", password_new);
+                
+                int kq = cmd.ExecuteNonQuery();
+
+                if (kq!= 0)
+                {
+                    return true;
+                }
+
+                //using (SqlDataReader reader = cmd.ExecuteReader())
+                //{
+                //    if (reader.Read())
+                //    {
+                //        nhanVien = new NHANVIENDTO
+                //        {
+                //            MANV = Convert.ToInt32(reader["MANV"]),
+                //            TENNV = reader["TENNV"].ToString(),
+                //            QUYEN = reader["QUYEN"].ToString(),
+                //            USERNAME = reader["USERNAME"].ToString(),
+                //            PASSWORD = reader["PASSWORD"].ToString()
+                //        };
+                //    }
+                //}
+            }
+            return false;
+        }
         // tạm xong login
 
         // BẮT ĐẦU khuyến mãi
@@ -749,7 +793,7 @@ namespace DOAN_DAL
             using (SqlConnection conn = new SqlConnection(connectionString))
             {
                 conn.Open();
-                string query = "SELECT MAKM, TENKM FROM CHUONGTRINH_KHUYENMAI";
+                string query = "DECLARE @KQ INT; SET @KQ = dbo.FUN_LAYMAKHUYENMAI(); SELECT* FROM FUN_LAYMAKM_TABLE(@KQ);";
                 SqlDataAdapter adapter = new SqlDataAdapter(query, conn);
                 DataTable dataTable = new DataTable();
                 adapter.Fill(dataTable);
@@ -795,18 +839,26 @@ namespace DOAN_DAL
         // Sửa khuyến mãi
         public bool SuaKhuyenMai(KHUYENMAIDTO km)
         {
-            using (SqlConnection conn = new SqlConnection(connectionString))
+            try
             {
-                conn.Open();
-                string query = "UPDATE CHUONGTRINH_KHUYENMAI SET TENKM = @TENKM, NGAYBD = @NGAYBD, NGAYKT = @NGAYKT, PHAMTRAM_KM = @HESO WHERE MAKM = @MAKM";
-                SqlCommand cmd = new SqlCommand(query, conn);
-                cmd.Parameters.AddWithValue("@TENKM", km.Tenkm);
-                cmd.Parameters.AddWithValue("@NGAYBD", km.Ngaybd);
-                cmd.Parameters.AddWithValue("@NGAYKT", km.Ngaykt);
-                cmd.Parameters.AddWithValue("@HESO", km.Hesokm);
+                using (SqlConnection conn = new SqlConnection(connectionString))
+                {
+                    conn.Open();
+                    string query = "UPDATE CHUONGTRINH_KHUYENMAI SET TENKM = @TENKM, NGAYBD = @NGAYBD, NGAYKT = @NGAYKT, PHAMTRAM_KM = @HESO WHERE MAKM = @MAKM";
+                    SqlCommand cmd = new SqlCommand(query, conn);
+                    cmd.Parameters.AddWithValue("@TENKM", km.Tenkm);
+                    cmd.Parameters.AddWithValue("@NGAYBD", km.Ngaybd);
+                    cmd.Parameters.AddWithValue("@NGAYKT", km.Ngaykt);
+                    cmd.Parameters.AddWithValue("@HESO", km.Hesokm);
 
-                return cmd.ExecuteNonQuery() > 0;
+                    return cmd.ExecuteNonQuery() > 0;
+                }
             }
+            catch (Exception)
+            {
+                return false;
+            }
+            
         }
 
         // Xóa khuyến mãi

@@ -25,12 +25,34 @@ namespace GUI_QL_TRASUA
             bool dangnhap = false;
             string username = txt_username.Text;
             string password = txt_password.Text;
+
+            if (username.Length > 30)
+            {
+                MessageBox.Show("Đã nhập quá 30 ký tự, Xin hãy nhập lại");
+                txt_username.Clear();
+                txt_username.Focus();
+                return;
+            }
+
+            if (password.Length > 30)
+            {
+                MessageBox.Show("Đã nhập quá 30 ký tự, Xin hãy nhập lại");
+                txt_username.Clear();
+                txt_username.Focus();
+                return;
+            }
+
             BLL bll = new BLL();
             NHANVIENDTO nhanVien = bll.KiemTraDangNhap(username, password);
 
             if (nhanVien != null)
             {
                 dangnhap = true;
+            }
+            else
+            {
+                MessageBox.Show("Thông Tin Không Đúng, Đăng Nhập Lại Nhé");
+                return;
             }
 
             username = nhanVien.USERNAME;
@@ -61,6 +83,15 @@ namespace GUI_QL_TRASUA
             login.Hide();
             DangKy dangky = new DangKy();
             dangky.ShowDialog();
+            login.Close();
+        }
+
+        private void btn_doimatkhau_Click(object sender, EventArgs e)
+        {
+            Login login = this;
+            login.Hide();
+            DatLaiMatKhau repass = new DatLaiMatKhau();
+            repass.ShowDialog();
             login.Close();
         }
     }

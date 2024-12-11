@@ -100,6 +100,7 @@
             txt_password.Name = "txt_password";
             txt_password.Size = new Size(700, 41);
             txt_password.TabIndex = 4;
+            txt_password.UseSystemPasswordChar = true;
             // 
             // label3
             // 
@@ -145,6 +146,7 @@
             txt_repassword.Name = "txt_repassword";
             txt_repassword.Size = new Size(700, 41);
             txt_repassword.TabIndex = 13;
+            txt_repassword.UseSystemPasswordChar = true;
             // 
             // label4
             // 

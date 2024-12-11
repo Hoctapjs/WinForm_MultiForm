@@ -47,23 +47,49 @@ namespace GUI_QL_TRASUA
         private void btn_them_Click(object sender, EventArgs e)
         {
             BLL bll = new BLL();
-            KHACHHANGDTO kh = new KHACHHANGDTO
+
+            string tenkh = txt_tenkh.Text;
+            string sodt = txt_sodt.Text;
+            string diachi = txt_diachi.Text;
+
+            bool isNumeric = sodt.All(char.IsDigit);
+            bool kt_len = false;
+
+            if (sodt.Length == 10)
             {
-                TENKH = txt_tenkh.Text,
-                SODT = txt_sodt.Text,
-                DIACHI = txt_diachi.Text
-            };
-            bool isSuccess = bll.ThemKhachHang(kh);
-            if (isSuccess)
+                kt_len = true;
+            }
+
+            if (isNumeric == true && kt_len == true)
             {
-                MessageBox.Show("Thành công");
-                LoadKhachHang();
+                KHACHHANGDTO kh = new KHACHHANGDTO
+                {
+                    TENKH = txt_tenkh.Text,
+                    SODT = txt_sodt.Text,
+                    DIACHI = txt_diachi.Text
+                };
+                bool isSuccess = bll.ThemKhachHang(kh);
+                if (isSuccess)
+                {
+                    MessageBox.Show("Thành công");
+                    LoadKhachHang();
+                }
+                else
+                {
+                    MessageBox.Show("Thất bại");
+                }
             }
             else
             {
-                MessageBox.Show("Thất bại");
+                if (isNumeric == false)
+                {
+                    MessageBox.Show("Số điện thoại không được là ký tự chữ,");
+                }
+                else
+                {
+                    MessageBox.Show("Số điện thoại có độ dài là 10");
+                }
             }
-
         }
 
         private void btn_xoa_Click(object sender, EventArgs e)
@@ -78,7 +104,7 @@ namespace GUI_QL_TRASUA
             }
             else
             {
-                MessageBox.Show("Thất bại");
+                MessageBox.Show("Không thể xóa người dùng đã có đơn");
             }
 
         }
@@ -86,24 +112,50 @@ namespace GUI_QL_TRASUA
         private void btn_sua_Click(object sender, EventArgs e)
         {
             BLL bll = new BLL();
-            KHACHHANGDTO kh = new KHACHHANGDTO
+
+            string tenkh = txt_tenkh.Text;
+            string sodt = txt_sodt.Text;
+            string diachi = txt_diachi.Text;
+
+            bool isNumeric = sodt.All(char.IsDigit);
+            bool kt_len = false;
+
+            if (sodt.Length == 10)
             {
-                MAKH = Convert.ToInt32(txt_makh.Text),
-                TENKH = txt_tenkh.Text,
-                SODT = txt_sodt.Text,
-                DIACHI = txt_diachi.Text
-            };
-            bool isSuccess = bll.SuaKhachHang(kh);
-            if (isSuccess)
+                kt_len = true;
+            }
+
+            if (isNumeric == true && kt_len == true)
             {
-                MessageBox.Show("Thành công");
-                LoadKhachHang();
+                KHACHHANGDTO kh1 = new KHACHHANGDTO
+                {
+                    MAKH = Convert.ToInt32(txt_makh.Text),
+                    TENKH = txt_tenkh.Text,
+                    SODT = txt_sodt.Text,
+                    DIACHI = txt_diachi.Text
+                };
+                bool isSuccess1 = bll.SuaKhachHang(kh1);
+                if (isSuccess1)
+                {
+                    MessageBox.Show("Thành công");
+                    LoadKhachHang();
+                }
+                else
+                {
+                    MessageBox.Show("Thất bại");
+                }
             }
             else
             {
-                MessageBox.Show("Thất bại");
+                if (isNumeric == false)
+                {
+                    MessageBox.Show("Số điện thoại không được là ký tự chữ,");
+                }
+                else
+                {
+                    MessageBox.Show("Số điện thoại có độ dài là 10");
+                }
             }
-
         }
 
         private void dataGridView_KhachHang_CellClick(object sender, DataGridViewCellEventArgs e)

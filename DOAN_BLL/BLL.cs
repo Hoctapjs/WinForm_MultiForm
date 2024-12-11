@@ -288,6 +288,12 @@ namespace DOAN_BLL
             return dal.KiemTraDangNhap(username, password);
         }
 
+        public bool DoiMatKhau(string username, string password_new)
+        {
+            DAL dal = new DAL();
+            return dal.DoiMatKhau(username, password_new);
+        }
+
         // BẮT ĐẦU KHUYẾN MÃI
         // Thêm Khuyến mãi
         public DataTable GetAllKhuyenMai()

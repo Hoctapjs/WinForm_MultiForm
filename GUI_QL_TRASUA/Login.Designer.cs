@@ -37,6 +37,8 @@
             pictureBox1 = new PictureBox();
             btn_dangky = new Button();
             panel1 = new Panel();
+            btn_doimatkhau = new Button();
+            panel2 = new Panel();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
@@ -147,13 +149,39 @@
             panel1.Size = new Size(59, 7);
             panel1.TabIndex = 10;
             // 
+            // btn_doimatkhau
+            // 
+            btn_doimatkhau.BackColor = Color.Black;
+            btn_doimatkhau.Font = new Font("Segoe UI", 15F, FontStyle.Bold, GraphicsUnit.Point);
+            btn_doimatkhau.ForeColor = Color.Orange;
+            btn_doimatkhau.Image = Properties.Resources.reset_password;
+            btn_doimatkhau.ImageAlign = ContentAlignment.MiddleLeft;
+            btn_doimatkhau.Location = new Point(29, 530);
+            btn_doimatkhau.Name = "btn_doimatkhau";
+            btn_doimatkhau.Padding = new Padding(20, 0, 20, 0);
+            btn_doimatkhau.Size = new Size(306, 90);
+            btn_doimatkhau.TabIndex = 12;
+            btn_doimatkhau.Text = "Đổi Mật Khẩu";
+            btn_doimatkhau.TextAlign = ContentAlignment.MiddleRight;
+            btn_doimatkhau.UseVisualStyleBackColor = false;
+            btn_doimatkhau.Click += btn_doimatkhau_Click;
+            // 
+            // panel2
+            // 
+            panel2.Location = new Point(369, 572);
+            panel2.Name = "panel2";
+            panel2.Size = new Size(314, 7);
+            panel2.TabIndex = 11;
+            // 
             // Login
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackgroundImage = Properties.Resources.Skyline;
             BackgroundImageLayout = ImageLayout.Stretch;
-            ClientSize = new Size(724, 530);
+            ClientSize = new Size(724, 632);
+            Controls.Add(panel2);
+            Controls.Add(btn_doimatkhau);
             Controls.Add(btn_dangky);
             Controls.Add(panel1);
             Controls.Add(pictureBox1);
@@ -181,5 +209,7 @@
         private PictureBox pictureBox1;
         private Button btn_dangky;
         private Panel panel1;
+        private Button btn_doimatkhau;
+        private Panel panel2;
     }
 }

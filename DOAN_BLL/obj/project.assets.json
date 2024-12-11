@@ -165,6 +165,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
         "dependencies": {
+          "Report": "1.0.0",
           "System.Data.SqlClient": "4.8.6"
         },
         "compile": {
@@ -172,6 +173,15 @@
         },
         "runtime": {
           "bin/placeholder/DOAN_DTO.dll": {}
+        }
+      },
+      "Report/1.0.0": {
+        "type": "project",
+        "compile": {
+          "bin/placeholder/Report.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Report.dll": {}
         }
       }
     }
@@ -499,6 +509,11 @@
       "type": "project",
       "path": "../DOAN_DTO/DOAN_DTO.csproj",
       "msbuildProject": "../DOAN_DTO/DOAN_DTO.csproj"
+    },
+    "Report/1.0.0": {
+      "type": "project",
+      "path": "../Report/Report.csproj",
+      "msbuildProject": "../Report/Report.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -581,20 +596,6 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
-        "downloadDependencies": [
-          {
-            "name": "Microsoft.AspNetCore.App.Ref",
-            "version": "[6.0.36, 6.0.36]"
-          },
-          {
-            "name": "Microsoft.NETCore.App.Ref",
-            "version": "[6.0.36, 6.0.36]"
-          },
-          {
-            "name": "Microsoft.WindowsDesktop.App.Ref",
-            "version": "[6.0.36, 6.0.36]"
-          }
-        ],
         "frameworkReferences": {
           "Microsoft.NETCore.App": {
             "privateAssets": "all"

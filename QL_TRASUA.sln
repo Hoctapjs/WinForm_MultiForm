@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DOAN_BLL", "DOAN_BLL\DOAN_B
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DOAN_DAL", "DOAN_DAL\DOAN_DAL.csproj", "{4EB66258-CF2C-4001-B83A-24E7565A68A8}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Report", "Report\Report.csproj", "{C1F34AE2-2D0E-4F19-B984-BE8C52949657}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{4EB66258-CF2C-4001-B83A-24E7565A68A8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4EB66258-CF2C-4001-B83A-24E7565A68A8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4EB66258-CF2C-4001-B83A-24E7565A68A8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C1F34AE2-2D0E-4F19-B984-BE8C52949657}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C1F34AE2-2D0E-4F19-B984-BE8C52949657}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C1F34AE2-2D0E-4F19-B984-BE8C52949657}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C1F34AE2-2D0E-4F19-B984-BE8C52949657}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

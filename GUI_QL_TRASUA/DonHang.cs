@@ -58,8 +58,12 @@ namespace GUI_QL_TRASUA
         {
             BLL bll = new BLL();
             //bool isSuccess = bll.ThemKhachHang();
+
+
+
             txt_makh.Text = bll.GetKhachHangMoiNhat().ToString();
             makh = bll.GetKhachHangMoiNhat();
+
             DONHANGDTO dh = new DONHANGDTO
             {
                 MAKH = makh,

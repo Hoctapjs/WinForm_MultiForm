@@ -146,6 +146,15 @@
             "rid": "win"
           }
         }
+      },
+      "Report/1.0.0": {
+        "type": "project",
+        "compile": {
+          "bin/placeholder/Report.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Report.dll": {}
+        }
       }
     }
   },
@@ -462,10 +471,16 @@
         "useSharedDesignerContext.txt",
         "version.txt"
       ]
+    },
+    "Report/1.0.0": {
+      "type": "project",
+      "path": "../Report/Report.csproj",
+      "msbuildProject": "../Report/Report.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net6.0": [
+      "Report >= 1.0.0",
       "System.Data.SqlClient >= 4.8.6"
     ]
   },
@@ -500,7 +515,11 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "D:\\cong nghe net nop Copy 2\\DoAnCongNghe.Net\\Report\\Report.csproj": {
+              "projectPath": "D:\\cong nghe net nop Copy 2\\DoAnCongNghe.Net\\Report\\Report.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
